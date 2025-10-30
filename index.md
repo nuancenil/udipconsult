@@ -41,9 +41,3 @@ hero_subtitle: 創新策略 × 智慧財產顧問
   <a href="{{ '/contact/' | relative_url }}" class="button">聯絡我們</a>
   <a href="{{ '/blog/' | relative_url }}" class="button">更多洞見</a>
 </p>
-
----
-
-<p style="font-size: 0.9em; color: #888;">
-Eudaimonia IP Consulting · Taipei / Remote · <a href="mailto:contact@eudaimonia-ip.com">contact@eudaimonia-ip.com</a>
-</p>
