@@ -267,3 +267,134 @@ a:focus-visible, .button:focus-visible, button:focus-visible {
   outline-offset: 2px;
   border-radius: 6px;
 }
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 2rem;
+  background: linear-gradient(to right, var(--brand), #cdd9de);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+.nav-lang {
+  margin-left: auto;
+}
+
+.nav-lang a {
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  padding: 0.25em 0.6em;
+  font-size: 0.9em;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.nav-lang a:hover {
+  background-color: var(--accent);
+  color: white;
+}
+
+/* === Navigation alignment & bilingual fine-tuning === */
+
+/* 導覽列主容器：保持水平對齊 */
+.site-nav .nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* 品牌文字：稍微放大、加字距 */
+.site-nav .brand {
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  font-size: 1.1rem;
+  margin-right: 1rem;
+  white-space: nowrap;
+}
+
+/* 導覽項目排列間距與字體設定 */
+.site-nav .nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav .nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: color .2s ease, border-color .2s ease;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.2rem;
+}
+
+/* hover / active */
+.site-nav .nav-links a:hover,
+.site-nav .nav-links a[aria-current="page"] {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* 語言切換按鈕區 */
+.nav-lang {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-lang a {
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all .2s ease;
+}
+
+.nav-lang a:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+/* RWD：手機上讓導覽自動換行置中 */
+@media (max-width: 768px) {
+  .site-nav .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .site-nav .nav-links {
+    justify-content: center;
+  }
+  .nav-lang {
+    margin: 0.5rem 0 0;
+  }
+}
+
