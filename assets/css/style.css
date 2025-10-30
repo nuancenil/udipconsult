@@ -157,3 +157,43 @@ main.content {
   .nav-links{ order:3; width:100%; justify-content:space-between; }
   .nav-lang{ order:2; margin-left:auto; }
 }
+
+/* === Brand palette override (append-only, do NOT delete above) === */
+:root {
+  --brand: #B6C6CF;   /* 主色（藍灰） */
+  --accent: #D47854;  /* 強調（珊瑚橘） */
+  --text: #47423F;    /* 文字深灰 */
+  --bg: #EEEFEF;      /* 背景淺灰 */
+  --muted: #A09D95;   /* 次要文字 */
+}
+
+/* 全站字色 / 背景：以新色取代 */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Noto Sans TC", "Forum", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsoft JhengHei", sans-serif;
+}
+
+/* 連結顏色以 accent 為主，hover 回 brand 作柔和反差 */
+a { color: var(--accent); }
+a:hover { color: var(--brand); }
+
+/* 導覽列：維持半透明，但用品牌漸層鋪底 */
+.site-nav {
+  background: linear-gradient(to right, var(--brand), #cdd9de);
+  color: var(--text);
+}
+
+/* 按鈕：以 accent 實心，hover 變 brand（會覆蓋先前的線框版） */
+.button, button {
+  background-color: var(--accent);
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.6em 1.2em;
+  border: 1px solid transparent;
+}
+.button:hover, button:hover {
+  background-color: var(--brand);
+  color: #fff;
+  text-decoration: none;
+}
