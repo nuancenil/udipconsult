@@ -1,11 +1,12 @@
 <nav class="site-nav">
   <div class="nav-container">
     <!-- 左：品牌（首頁連結會根據語言） -->
-    {% if page.lang == 'en' %}
-      <a class="brand" href="{{ '/en/' | relative_url }}">Eudaimonia IP</a>
+    {% if page.lang == "en" %}
+    <a href="{{ '/en/' | relative_url }}" class="site-title">Eudaimonia IP</a>
     {% else %}
-      <a class="brand" href="{{ '/' | relative_url }}">寓待智權管理</a>
+    <a href="{{ '/' | relative_url }}" class="site-title">寓待智權管理</a>
     {% endif %}
+
 
     <!-- 中：導覽項目 -->
     {% assign nav_items = site.data.nav[page.lang] %}
