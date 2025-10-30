@@ -1,13 +1,17 @@
 <nav class="site-nav">
-  <div class="container nav-inner">
+  <div class="nav-container">
     <a class="brand" href="{{ '/' | relative_url }}">Eudaimonia IP</a>
-
     <ul class="nav-links">
-      <li><a href="{{ '/services/'  | relative_url }}"  {% if page.url == '/services/'  %}aria-current="page"{% endif %}>服務</a></li>
-      <li><a href="{{ '/pataxial/'  | relative_url }}"  {% if page.url == '/pataxial/'  %}aria-current="page"{% endif %}>PatAxial</a></li>
-      <li><a href="{{ '/blog/'      | relative_url }}"  {% if page.url == '/blog/'      %}aria-current="page"{% endif %}>洞見</a></li>
-      <li><a href="{{ '/about/'     | relative_url }}"  {% if page.url == '/about/'     %}aria-current="page"{% endif %}>關於</a></li>
-      <li><a href="{{ '/contact/'   | relative_url }}"  {% if page.url == '/contact/'   %}aria-current="page"{% endif %}>聯絡</a></li>
+      {% assign base = '' %}
+      {% if page.lang == 'en' %}
+        {% assign base = '/en' %}
+      {% endif %}
+
+      <li><a href="{{ base | append: '/services/'  | relative_url }}">服務 / Services</a></li>
+      <li><a href="{{ base | append: '/pataxial/'  | relative_url }}">PatAxial</a></li>
+      <li><a href="{{ base | append: '/blog/'      | relative_url }}">洞見 / Blog</a></li>
+      <li><a href="{{ base | append: '/about/'     | relative_url }}">關於 / About</a></li>
+      <li><a href="{{ base | append: '/contact/'   | relative_url }}">聯絡 / Contact</a></li>
     </ul>
 
     <div class="nav-lang">

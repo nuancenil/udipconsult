@@ -3,13 +3,15 @@ description: "Innovation strategy, IP intelligence, and PatAxial consulting."
 url: "https://nuancenil.github.io"   # ← 個人帳號網址
 baseurl: "/udipconsult"               # ← 專案路徑
 permalink: /:categories/:year/:month/:day/:title/
-email: "genius@eudaimonia-ip.com"
+email: "service@eudaimonia-ip.com"
 lang: zh
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-brand_color: "#1f3b63"
-accent_color: "#3e6ea1"
-muted_color: "#6b7280"
-light_bg: "#f8fafc"
+
+brand_color: "#B6C6CF"
+accent_color: "#D47854"
+text_color: "#47423F"
+background_color: "#EEEFEF"
+muted_color: "#A09D95"

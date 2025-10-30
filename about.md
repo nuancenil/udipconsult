@@ -23,5 +23,7 @@ Eudaimonia IP Consulting 的理念建立在知識、洞察與創新的策略性�
 
 我們是一支結合產學研背景的團隊，長期關注創新策略與智慧財產的交匯點。
 
-- Email：genius@eudaimonia-ip.com
+
+- Email：[genius@eudaimonia-ip.com](mailto:genius@eudaimonia-ip.com)
 - 地點：Taipei / Remote
+
