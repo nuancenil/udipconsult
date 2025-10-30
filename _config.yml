@@ -16,6 +16,10 @@ text_color: "#47423F"
 background_color: "#EEEFEF"
 muted_color: "#A09D95"
 
+timezone: Asia/Taipei
+future: true
+
+
 collections:
   posts:
     output: true
