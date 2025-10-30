@@ -1,20 +1,20 @@
 <nav class="site-nav">
   <div class="container">
-    <a class="brand" href="{{ page.lang == 'en' | default: false | ternary: '/en/', '/' }}">
+    <a class="brand" href="{{ '/' | relative_url }}">
       <span>Eudaimonia IP</span>
     </a>
     <ul>
       {%- assign items = site.data.nav[page.lang | default: site.lang] -%}
       {%- for item in items -%}
-        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
       {%- endfor -%}
     </ul>
     <div class="lang-switch">
       {%- if page.lang == 'en' -%}
-        <a href="{{ page.zh_url | default: '/' }}">中</a>
+        <a href="{{ (page.zh_url | default: '/') | relative_url }}">中</a>
         <span> / EN</span>
       {%- else -%}
-        <span>中 / </span><a href="{{ page.en_url | default: '/en/' }}">EN</a>
+        <span>中 / </span><a href="{{ (page.en_url | default: '/en/') | relative_url }}">EN</a>
       {%- endif -%}
     </div>
   </div>
