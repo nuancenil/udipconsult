@@ -1,0 +1,27 @@
+zh:
+  - title: 首頁
+    url: /
+  - title: 服務
+    url: /services/
+  - title: PatAxial
+    url: /pataxial/
+  - title: 部落格
+    url: /blog/
+  - title: 關於我們
+    url: /about/
+  - title: 聯絡
+    url: /contact/
+
+en:
+  - title: Home
+    url: /en/
+  - title: Services
+    url: /en/services/
+  - title: PatAxial
+    url: /en/pataxial/
+  - title: Blog
+    url: /en/blog/
+  - title: About
+    url: /en/about/
+  - title: Contact
+    url: /en/contact/

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  {%- seo -%}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  {% include nav.html %}
+  <header class="hero">
+    <div class="container">
+      <h1>{{ page.hero_title | default: page.title | default: site.title }}</h1>
+      {%- if page.hero_subtitle -%}
+        <p class="subtitle">{{ page.hero_subtitle }}</p>
+      {%- endif -%}
+    </div>
+  </header>
+  <main class="container content">
+    {{ content }}
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; {{ "now" | date: "%Y" }} Eudaimonia IP / UDIP Consult · All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
