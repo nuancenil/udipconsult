@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Eudaimonia IP / UDIP Consult
+permalink: /en/
 lang: en
 zh_url: /
 hero_subtitle: Innovation Strategy & IP Advisory
