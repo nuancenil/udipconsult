@@ -30,3 +30,16 @@ Empowering your knowledge, leveraging your IP insights
     <p><a href="{{ '/blog/' | relative_url }}">前往部落格 →</a></p>
   </div>
 </div>
+
+
+<p style="margin-top: 2em;">
+  <a href="{{ '/about/' | relative_url }}" class="button">了解更多</a>
+  <a href="{{ '/contact/' | relative_url }}" class="button">聯絡我們</a>
+  <a href="{{ '/blog/' | relative_url }}" class="button">前往部落格</a>
+</p>
+
+---
+
+<p style="font-size: 0.9em; color: #888;">
+Eudaimonia IP Consulting · Taipei / Remote · contact@eudaimonia-ip.com
+</p>

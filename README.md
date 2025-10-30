@@ -29,7 +29,13 @@ bundle exec jekyll serve
 - Add DNS: `www` → CNAME to `<your-account>.github.io` ; apex → A/ALIAS/ANAME to GitHub Pages IPs (see docs).
 
 
+#blog更新
 git add -A
 git commit -m "Update layout and blog page"
 git pull --rebase origin main
 git push origin main
+
+#index更新
+git add -A
+git commit -m "Style buttons; verify About/Contact links from index"
+git push
