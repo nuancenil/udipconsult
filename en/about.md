@@ -18,5 +18,5 @@ Future-Proof Protection
 In a dynamic and rapidly evolving IP landscape, Eudaimonia IP ensures clients' innovations and brands are safeguarded and strategically positioned for long-term growth and success.
 
 
-- Email: contact@eudaimonia-ip.com
+- Email: genius@eudaimonia-ip.com
 - Location: Taipei / Remote
