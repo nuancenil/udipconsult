@@ -1,21 +1,21 @@
 <nav class="site-nav">
-  <div class="container">
-    <a class="brand" href="{{ '/' | relative_url }}">
-      <span>Eudaimonia IP</span>
-    </a>
-    <ul>
-      {%- assign items = site.data.nav[page.lang | default: site.lang] -%}
-      {%- for item in items -%}
-        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
-      {%- endfor -%}
+  <div class="container nav-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">Eudaimonia IP</a>
+
+    <ul class="nav-links">
+      <li><a href="{{ '/services/'  | relative_url }}"  {% if page.url == '/services/'  %}aria-current="page"{% endif %}>服務</a></li>
+      <li><a href="{{ '/pataxial/'  | relative_url }}"  {% if page.url == '/pataxial/'  %}aria-current="page"{% endif %}>PatAxial</a></li>
+      <li><a href="{{ '/blog/'      | relative_url }}"  {% if page.url == '/blog/'      %}aria-current="page"{% endif %}>洞見</a></li>
+      <li><a href="{{ '/about/'     | relative_url }}"  {% if page.url == '/about/'     %}aria-current="page"{% endif %}>關於</a></li>
+      <li><a href="{{ '/contact/'   | relative_url }}"  {% if page.url == '/contact/'   %}aria-current="page"{% endif %}>聯絡</a></li>
     </ul>
-    <div class="lang-switch">
-      {%- if page.lang == 'en' -%}
-        <a href="{{ (page.zh_url | default: '/') | relative_url }}">中</a>
-        <span> / EN</span>
-      {%- else -%}
-        <span>中 / </span><a href="{{ (page.en_url | default: '/en/') | relative_url }}">EN</a>
-      {%- endif -%}
+
+    <div class="nav-lang">
+      {% if page.lang == 'zh' %}
+        <a href="{{ page.en_url | default: '/en/' | relative_url }}">EN</a>
+      {% else %}
+        <a href="{{ page.zh_url | default: '/'    | relative_url }}">中</a>
+      {% endif %}
     </div>
   </div>
 </nav>
