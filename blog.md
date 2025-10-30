@@ -5,7 +5,6 @@ lang: zh
 en_url: /en/blog/
 permalink: /blog/
 ---
-
 <ul>
 {%- assign posts_zh = site.posts | where: "lang", "zh" -%}
 {%- for post in posts_zh -%}
