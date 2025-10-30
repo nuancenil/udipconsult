@@ -1,10 +1,11 @@
 ---
-    layout: default
-    title: Contact
-    lang: en
-    zh_url: contact/
-    hero_subtitle: 
-    ---
+layout: default
+title: Contact
+lang: en
+zh_url: /contact/
+permalink: /en/contact/
+---
+
 
 To discuss a project or collaboration, email **contact@eudaimonia-ip.com**.
 
