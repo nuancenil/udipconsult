@@ -3,15 +3,11 @@
     <!-- 左：品牌（首頁連結會根據語言） -->
     <div class="nav-brand">
       {% if page.lang == 'en' %}
-        <a href="{{ '/en/' | relative_url }}">UDIP Consult</a>
+        <a href="{{ '/en/' | relative_url }}" class="site-title">Eudaimonia IP</a>
       {% else %}
-        <a href="{{ '/' | relative_url }}">UDIP Consult</a>
-      {% endif %}{% if page.lang == "en" %}
-  <a href="{{ '/en/' | relative_url }}" class="site-title">Eudaimonia IP</a>
-{% else %}
-  <a href="{{ site.baseurl | append: '/' }}" class="site-title">寓待智權管理</a>
-{% endif %}
-
+        <a href="{{ site.baseurl | append: '/' }}" class="site-title">寓待智權管理</a>
+      {% endif %}
+    </div>
 
     <!-- 中：導覽項目 -->
     {% assign nav_items = site.data.nav[page.lang] %}
@@ -24,7 +20,7 @@
     <!-- 右：語言切換 -->
     <div class="nav-lang">
       {% if page.lang == 'en' %}
-        <a href="{{ '/' | relative_url }}">中文</a>
+        <a href="{{ site.baseurl | append: '/' }}">中文</a>
       {% else %}
         <a href="{{ '/en/' | relative_url }}">EN</a>
       {% endif %}
