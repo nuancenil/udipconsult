@@ -44,5 +44,4 @@ to help organizations and research teams align innovation with intellectual prop
   <a href="{{ '/en/blog/'    | relative_url }}" class="button">Blog</a>
 </div>
 
-
 ---
