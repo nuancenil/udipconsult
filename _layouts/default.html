@@ -8,22 +8,35 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  <header class="lang-switch" style="text-align:right; margin: 0.5em 1em;">
+  <!-- 語言切換：右上角 -->
+  <header class="lang-switch">
     {% if page.lang == "zh" and page.en_url %}
-      <a href="{{ page.en_url | relative_url }}">🌐 English version →</a>
+      <a href="{{ page.en_url | relative_url }}">English version →</a>
     {% elsif page.lang == "en" and page.zh_url %}
-      <a href="{{ page.zh_url | relative_url }}">🌐 中文版 →</a>
+      <a href="{{ page.zh_url | relative_url }}">中文版 →</a>
     {% endif %}
   </header>
 
   {% include nav.html %}
+
   <main class="container content">
     {{ content }}
   </main>
+
   <footer class="site-footer">
     <div class="container">
+      <p>
+        Eudaimonia IP Consulting · Taipei / Remote ·
+        {% if site.email %}
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        {% else %}
+          <!-- 若未設定 email，就顯示預設值 -->
+          <a href="mailto:contact@eudaimonia-ip.com">contact@eudaimonia-ip.com</a>
+        {% endif %}
+      </p>
       <p>&copy; {{ "now" | date: "%Y" }} Eudaimonia IP / UDIP Consult · All rights reserved.</p>
     </div>
   </footer>
 </body>
+
 </html>
