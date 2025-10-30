@@ -5,6 +5,7 @@ lang: zh
 en_url: /en/
 hero_subtitle: 創新策略與智慧財產顧問
 ---
+Empowering your knowledge, leveraging your IP insights
 
 歡迎來到 Eudaimonia IP（UDIP Consult）。我們專注於：
 
