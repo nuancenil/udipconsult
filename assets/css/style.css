@@ -1,94 +1,200 @@
-/* ====== Color tokens (Wix-like blue/gray) ====== */
-:root{
+/* ===== Reset & Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  line-height: 1.7;
+  color: #1f2937;
+  background: #fff;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 1rem 0 0.6rem;
+  line-height: 1.3;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* 區塊之間的自然留白 */
+section, .content {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+
+/* ====== 色系 (取自 _config.yml 並還原漸層感) ====== */
+:root {
+  --brand: #1f3b63;
+  --accent: #3e6ea1;
+  --accent-light: #6a9fd1;
   --bg: #ffffff;
-  --text: #1f2937;          /* 深灰文字 */
-  --muted: #6b7280;         /* 次要文字 */
-  --line: #e5e7eb;          /* 分隔線 */
-  --card: #f8fafc;          /* 卡片底 */
-  --accent: #2f80ed;        /* 柔和藍 (#2F80ED 常見於 Wix 範本) */
-  --accent-600:#1f6bdd;
-  --link: #1f6bdd;
+  --bg-soft: #f8fafc;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --line: #e5e7eb;
 }
 
-/* ====== Global ====== */
-html,body{margin:0;padding:0;background:var(--bg);color:var(--text);}
-body{
-  font: 400 17px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","PingFang TC","Microsoft JhengHei",sans-serif;
+/* ====== 全域設定 ====== */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.7;
 }
 
-h1{font-size:36px;margin:.5rem 0 1rem;}
-h2{font-size:28px;margin:1.25rem 0 .75rem;}
-h3{font-size:20px;margin:1rem 0 .5rem;font-weight:700;}
-
-a{color:var(--link);text-decoration:none}
-a:hover{text-decoration:underline}
-
-/* ====== Layout ====== */
-.container{max-width:1060px;margin:0 auto;padding:0 24px;}
-main.content{padding:24px 0 40px;}
-.hero{padding:8px 0 8px;} /* 別讓 hero 太高 */
-
-/* ====== Lang switch (右上角) ====== */
-.lang-switch{ text-align:right; margin:.25rem 1rem 0 0; font-size:14px; }
-.lang-switch a{ color:var(--muted); }
-.lang-switch a:hover{ color:var(--text); text-decoration:none; }
-
-/* ====== Divider ====== */
-hr{border:0;border-top:1px solid var(--line);margin:24px 0}
-
-/* ====== Cards ====== */
-.card-grid{
-  display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-  gap:18px;
-  margin-top:18px;
+/* ====== 英雄區 (漸層背景) ====== */
+.hero {
+  background: linear-gradient(180deg, var(--accent-light) 0%, var(--bg) 80%);
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
 }
-.card{
-  background:var(--card);
-  border:1px solid var(--line);
-  border-radius:14px;
-  padding:18px;
-  transition: box-shadow .2s ease, transform .15s ease;
-}
-.card:hover{ box-shadow:0 8px 24px rgba(0,0,0,.06); transform: translateY(-2px); }
-.card p{ margin:.5rem 0; }
-.card a{ font-weight:600; }
 
-/* ====== Buttons: 線框風（hover 再上色） ====== */
-.button{
-  display:inline-block;
-  padding:.55em 1.1em;
-  border:1.5px solid var(--accent);
-  color:var(--accent);
-  border-radius:10px;
-  background:transparent;
-  font-weight:600;
-  margin:.25em .4em .25em 0;
-  transition: background .15s ease, color .15s ease, transform .05s ease;
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: white;
 }
-.button:hover{
-  background:var(--accent);
-  color:#fff;
-  text-decoration:none;
+
+.hero p {
+  font-size: 18px;
+  color: #eef4fa;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+/* ====== 容器與排版 ====== */
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+main.content {
+  padding: 2rem 0 3rem;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* ====== 卡片區塊 ====== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 2rem;
+}
+
+.card {
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  color: var(--brand);
+  margin-top: 0;
+}
+
+.card a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* ====== 按鈕樣式 (輕量 + hover 漸層) ====== */
+.button {
+  display: inline-block;
+  padding: 0.55em 1.2em;
+  border-radius: 8px;
+  border: 1.5px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 0.5em;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.button:hover {
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-light) 100%);
+  color: white;
+  text-decoration: none;
 }
 
 /* ====== Footer ====== */
-.site-footer{
-  border-top:1px solid var(--line);
-  color:var(--muted);
+.site-footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
 }
-.site-footer .container{
-  padding:14px 24px;
-  font-size:14px;
-  text-align:left;
+
+.site-footer .container {
+  padding: 16px 24px;
+  font-size: 14px;
+  text-align: left;
 }
-.site-footer a{ color:var(--link); }
 
-/* ====== Blog list ====== */
-.post-list li{ margin:.25rem 0 .9rem; }
+.site-footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
 
-/* ====== Mobile tweaks ====== */
-@media (max-width: 768px){
-  .container{ padding:0 18px; }
-  h1{font-size:30px}
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ====== 響應式 ====== */
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 16px;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .container {
+    padding: 0 18px;
+  }
 }
