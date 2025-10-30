@@ -8,14 +8,6 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  <!-- 語言切換：右上角 -->
-  <header class="lang-switch">
-    {% if page.lang == "zh" and page.en_url %}
-      <a href="{{ page.en_url | relative_url }}">English version →</a>
-    {% elsif page.lang == "en" and page.zh_url %}
-      <a href="{{ page.zh_url | relative_url }}">中文版 →</a>
-    {% endif %}
-  </header>
 
   {% include nav.html %}
 
