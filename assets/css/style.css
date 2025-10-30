@@ -29,16 +29,21 @@ a:hover { text-decoration: underline; }
 blockquote { border-left: 4px solid var(--accent); padding-left: .75rem; margin-left: 0; color:#374151; }
 code { background: #f3f4f6; padding: .1rem .3rem; border-radius: 4px; }
 
+/* 按鈕樣式修正 */
 .button {
   display: inline-block;
-  padding: 0.6em 1.1em;
-  background: var(--accent);
-  color: #fff;
-  border-radius: 10px;
+  padding: 0.6em 1.2em;
+  background-color: #0072ce;
+  color: #fff !important;
+  border-radius: 8px;
   text-decoration: none;
+  margin-right: 0.5em;
   font-weight: 600;
-  border: 1px solid rgba(0,0,0,.06);
-  transition: transform .05s ease, box-shadow .15s ease;
-  margin-right: .5em;
+  transition: background-color 0.2s ease, transform 0.1s ease;
 }
-.button:hover { text-decoration: none; box-shadow: 0 6px 16px rgba(0,0,0,.08); transform: translateY(-1px); }
+
+.button:hover {
+  background-color: #005ea8;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
