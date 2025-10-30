@@ -19,16 +19,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: ruby/setup-ruby@v1
+      - uses: actions/configure-pages@v5
+      - uses: actions/jekyll-build-pages@v1
         with:
-          ruby-version: '3.2'
-          bundler-cache: true
-
-      - name: Build with Jekyll
-        run: |
-          bundle install
-          bundle exec jekyll build --trace --strict_front_matter
-
+          source: ./
+          destination: ./_site
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
@@ -42,3 +37,4 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
