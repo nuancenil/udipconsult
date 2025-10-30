@@ -29,9 +29,7 @@ bundle exec jekyll serve
 - Add DNS: `www` → CNAME to `<your-account>.github.io` ; apex → A/ALIAS/ANAME to GitHub Pages IPs (see docs).
 
 
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/nuancenil/udipconsult.git
-git push -u origin main
+git add -A
+git commit -m "Update layout and blog page"
+git pull --rebase origin main
+git push origin main
