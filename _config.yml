@@ -3,6 +3,11 @@ description: "Innovation strategy, IP intelligence, and PatAxial consulting."
 url: "https://nuancenil.github.io"   # ← 個人帳號網址
 baseurl: "/udipconsult"               # ← 專案路徑
 permalink: /:categories/:year/:month/:day/:title/
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:year/:month/:day/:title/
+
 email: "service@eudaimonia-ip.com"
 lang: zh
 plugins:
@@ -19,7 +24,6 @@ muted_color: "#A09D95"
 timezone: Asia/Taipei
 future: true
 
-
 collections:
   posts:
     output: true
@@ -32,3 +36,5 @@ defaults:
 
 # 要確保這行存在
 data_dir: _data
+exclude:
+  - README.md
