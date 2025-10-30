@@ -15,3 +15,16 @@ accent_color: "#D47854"
 text_color: "#47423F"
 background_color: "#EEEFEF"
 muted_color: "#A09D95"
+
+collections:
+  posts:
+    output: true
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+
+# 要確保這行存在
+data_dir: _data
