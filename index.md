@@ -1,10 +1,3 @@
----
-    layout: default
-    title: Eudaimonia IP / UDIP Consult
-    lang: zh
-    en_url: en/
-    hero_subtitle: 創新策略與智慧財產顧問
-    ---
 
 歡迎來到 Eudaimonia IP（UDIP Consult）。我們專注於：
 - 研發／專利策略（R&D + IP Strategy）
