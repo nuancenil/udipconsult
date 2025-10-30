@@ -7,7 +7,6 @@ hero_subtitle: 用資料與方法，將創新做對的事
 permalink: /services/
 ---
 
-
 我們提供下列服務：
 
 ### 1) 專利／技術情報
