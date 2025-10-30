@@ -20,12 +20,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # 裝 Ruby + Bundler（用 Gemfile 的版本）
+      # 安裝 Ruby 並使用 Gemfile 版本（GitHub Pages 官方推薦）
       - uses: ruby/setup-ruby@v1
         with:
+          ruby-version: 3.2
           bundler-cache: true
 
-      - name: Build with Jekyll (using Gemfile)
+      - name: Build with Jekyll
         run: |
           bundle install
           bundle exec jekyll build --trace --strict_front_matter
