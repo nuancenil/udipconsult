@@ -19,3 +19,9 @@ _site/
 .bundle/
 vendor/
 _site/
+.DS_Store
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/

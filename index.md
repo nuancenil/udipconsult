@@ -2,7 +2,7 @@
 layout: default
 title: 寓待智權管理 / UDIP Consult
 lang: zh
-permalink: /
+permalink: /zh/
 en_url: /en/
 hero_subtitle: 創新策略 × 智慧財產顧問
 ---

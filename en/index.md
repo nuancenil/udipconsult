@@ -9,7 +9,7 @@ hero_subtitle: Innovation Strategy & IP Advisory
 
 Empowering your knowledge, leveraging your IP insights.
 
-Welcome to **Eudaimonia IP (UDIP Consult)** — integrating innovation strategy, patent analysis, and technological insight  
+Welcome to **Eudaimonia IP Consulting (UDIP Consulting)** — integrating innovation strategy, patent analysis, and technological insight  
 to help organizations and research teams align innovation with intellectual property protection.
 
 ---

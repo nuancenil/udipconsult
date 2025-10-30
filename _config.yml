@@ -8,8 +8,8 @@ lang: zh
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
-
+theme: null
+logo: "/assets/images/logo.png"
 brand_color: "#B6C6CF"
 accent_color: "#D47854"
 text_color: "#47423F"
