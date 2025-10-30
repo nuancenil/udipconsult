@@ -36,8 +36,9 @@ hero_subtitle: 創新策略 × 智慧財產顧問
   </div>
 </div>
 
-<p style="margin-top: 1.5rem;">
-  <a href="{{ '/about/' | relative_url }}" class="button">了解我們</a>
+<div class="btn-row" style="margin-top:1rem;">
+  <a href="{{ '/about/'   | relative_url }}" class="button">了解我們</a>
   <a href="{{ '/contact/' | relative_url }}" class="button">聯絡我們</a>
-  <a href="{{ '/blog/' | relative_url }}" class="button">更多洞見</a>
-</p>
+  <a href="{{ '/blog/'    | relative_url }}" class="button">更多洞見</a>
+</div>
+

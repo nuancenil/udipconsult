@@ -83,3 +83,37 @@ nav ul,.site-footer ul,.card ul,.post-list{list-style:none;margin:0;padding:0;}
   .hero{padding:48px 16px 36px;}
   .hero h1{font-size:34px;}
 }
+/* ===== Bottom safe area & spacing so buttons/footer never get covered ===== */
+:root {
+  /* 最小底部安全距，行動瀏覽器有工具列時會用到 */
+  --safe-bottom: max(16px, env(safe-area-inset-bottom, 0px));
+}
+
+body {
+  padding-bottom: var(--safe-bottom);
+}
+
+main.content {
+  /* 給主內容更充足的底部留白，避免貼到螢幕邊或被工具列蓋住 */
+  padding-bottom: calc(72px + var(--safe-bottom));
+}
+
+/* ===== Button row: 自動換行＋間距，不會互相擠或超出畫面 ===== */
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 12px 0 24px;
+}
+
+.btn-row .button {
+  margin: 0; /* 交給 gap 控制間距 */
+}
+
+/* 卡片和底部之間留出固定距離，避免卡片陰影與底部元素擠在一起 */
+.card-grid { margin-bottom: 16px; }
+
+/* Footer 與頁面底部保持安全距 */
+.site-footer .container {
+  padding-bottom: calc(14px + var(--safe-bottom));
+}

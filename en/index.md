@@ -38,10 +38,11 @@ to help organizations and research teams align innovation with intellectual prop
 
 ---
 
-<p style="margin-top: 2em;">
-  <a href="{{ '/en/about/' | relative_url }}" class="button">About</a>
+<div class="btn-row" style="margin-top:1rem;">
+  <a href="{{ '/en/about/'   | relative_url }}" class="button">About</a>
   <a href="{{ '/en/contact/' | relative_url }}" class="button">Contact</a>
-  <a href="{{ '/en/blog/' | relative_url }}" class="button">Blog</a>
-</p>
+  <a href="{{ '/en/blog/'    | relative_url }}" class="button">Blog</a>
+</div>
+
 
 ---
