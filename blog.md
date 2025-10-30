@@ -1,23 +1,20 @@
 ---
 layout: default
-title: 部落格 Blog
+title: 部落格
 lang: zh
 en_url: /en/blog/
 permalink: /blog/
 ---
 
-<ul>
+<ul class="post-list">
 {%- assign posts_zh = site.posts | where: "lang", "zh" -%}
 {%- for post in posts_zh -%}
-  <li style="margin: 0 0 1rem 0;">
+  <li>
     <a href="{{ post.url | relative_url }}"><strong>{{ post.title }}</strong></a>
-    <small>（{{ post.date | date: "%Y-%m-%d" }}）</small><br>
+    <small class="meta">（{{ post.date | date: "%Y-%m-%d" }}）</small>
     {%- if post.description -%}
-      {{ post.description }}
-    {%- else -%}
-      {{ post.excerpt | strip_html | truncate: 120 }}
+      <div class="excerpt">{{ post.description }}</div>
     {%- endif -%}
-    <a href="{{ post.url | relative_url }}">閱讀更多 →</a>
   </li>
 {%- endfor -%}
 </ul>
