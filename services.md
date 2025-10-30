@@ -1,10 +1,12 @@
 ---
-    layout: default
-    title: 服務 Services
-    lang: zh
-    en_url: en/services/
-    hero_subtitle: 用資料與方法，將創新做對的事
-    ---
+layout: default
+title: 服務 Services
+lang: zh
+en_url: /en/services/
+hero_subtitle: 用資料與方法，將創新做對的事
+permalink: /services/
+---
+
 
 我們提供下列服務：
 
