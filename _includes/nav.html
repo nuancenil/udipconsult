@@ -8,22 +8,22 @@
     {% assign nav_items = site.data.nav[page.lang] %}
     <ul class="nav-links">
       {% for item in nav_items %}
-        {% assign href = item.url | relative_url %}
-        <li>
-          <a href="{{ href }}"
-             {% if page.url == href or page.url == item.url %}aria-current="page"{% endif %}>
-            {{ item.title }}
-          </a>
-        </li>
+        {% assign nav_items = site.data.nav[page.lang] %}
+    <ul class="nav-links">
+      {% for item in nav_items %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
       {% endfor %}
+    </ul> 
+
     </ul>
 
     <div class="nav-lang">
-      {% if page.lang == 'zh' %}
-        <a href="{{ page.en_url | default: '/en/' | relative_url }}">EN</a>
+      {% if page.lang == 'en' %}
+      {% assign home_href = '/en/' %}
       {% else %}
-        <a href="{{ page.zh_url | default: '/'    | relative_url }}">中</a>
+      {% assign home_href = '/' %}
       {% endif %}
+      <a class="brand" href="{{ home_href | relative_url }}">Eudaimonia IP</a>
     </div>
   </div>
 </nav>
