@@ -2,10 +2,9 @@
   <div class="nav-container">
     <a class="brand" href="{{ '/' | relative_url }}">Eudaimonia IP</a>
     <ul class="nav-links">
-      {% assign base = '' %}
-      {% if page.lang == 'en' %}
-        {% assign base = '/en' %}
-      {% endif %}
+      {%- for item in nav_items -%}
+      <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      {%- endfor -%}
 
       <li><a href="{{ base | append: '/services/'  | relative_url }}">服務 / Services</a></li>
       <li><a href="{{ base | append: '/pataxial/'  | relative_url }}">PatAxial</a></li>
