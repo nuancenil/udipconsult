@@ -9,14 +9,7 @@
 </head>
 <body>
   {% include nav.html %}
-  <header class="hero">
-    <div class="container">
-      <h1>{{ page.hero_title | default: page.title | default: site.title }}</h1>
-      {%- if page.hero_subtitle -%}
-        <p class="subtitle">{{ page.hero_subtitle }}</p>
-      {%- endif -%}
-    </div>
-  </header>
+
   <main class="container content">
     {{ content }}
   </main>
