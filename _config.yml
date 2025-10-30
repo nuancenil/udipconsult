@@ -1,14 +1,12 @@
 title: "Eudaimonia IP / UDIP Consult"
 description: "Innovation strategy, IP intelligence, and PatAxial consulting."
-baseurl: ""   # e.g. /udipconsult if you publish under a project site
-url: ""       # e.g. https://yourname.github.io
+url: "https://nuancenil.github.io"   # ← 個人帳號網址
+baseurl: "/udipconsult"               # ← 專案路徑
 lang: zh
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
-permalink: /:categories/:year/:month/:day/:title/
 
 brand_color: "#1f3b63"
 accent_color: "#3e6ea1"
