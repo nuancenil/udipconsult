@@ -45,7 +45,3 @@ to help organizations and research teams align innovation with intellectual prop
 </p>
 
 ---
-
-<p style="font-size: 0.9em; color: #888;">
-Eudaimonia IP Consulting · Taipei / Remote · contact@eudaimonia-ip.com
-</p>
