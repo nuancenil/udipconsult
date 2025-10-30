@@ -1,10 +1,12 @@
 ---
-    layout: default
-    title: Services
-    lang: en
-    zh_url: services/
-    hero_subtitle: Do the right innovation with data & method
-    ---
+layout: default
+title: Services
+lang: en
+zh_url: /services/
+hero_subtitle: Do the right innovation with data & method
+permalink: /en/services/
+---
+
 
 We offer the following services:
 
