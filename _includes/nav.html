@@ -1,29 +1,27 @@
 <nav class="site-nav">
   <div class="nav-container">
-    {%- comment -%} 品牌連結：語言感知首頁 {%- endcomment -%}
-    {% assign home_href = page.lang == 'en' | default: false | ternary: '/en/', '/' %}
-    <a class="brand" href="{{ home_href | relative_url }}">Eudaimonia IP</a>
+    <!-- 左：品牌（首頁連結會根據語言） -->
+    {% if page.lang == 'en' %}
+      <a class="brand" href="{{ '/en/' | relative_url }}">Eudaimonia IP</a>
+    {% else %}
+      <a class="brand" href="{{ '/' | relative_url }}">寓待智權管理</a>
+    {% endif %}
 
-    {%- comment -%} 導覽項目：讀 _data/nav.yml {%- endcomment -%}
+    <!-- 中：導覽項目 -->
     {% assign nav_items = site.data.nav[page.lang] %}
-    <ul class="nav-links">
-      {% for item in nav_items %}
-        {% assign nav_items = site.data.nav[page.lang] %}
     <ul class="nav-links">
       {% for item in nav_items %}
         <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
       {% endfor %}
-    </ul> 
-
     </ul>
 
+    <!-- 右：語言切換 -->
     <div class="nav-lang">
       {% if page.lang == 'en' %}
-      {% assign home_href = '/en/' %}
+        <a href="{{ '/' | relative_url }}">中文</a>
       {% else %}
-      {% assign home_href = '/' %}
+        <a href="{{ '/en/' | relative_url }}">EN</a>
       {% endif %}
-      <a class="brand" href="{{ home_href | relative_url }}">Eudaimonia IP</a>
     </div>
   </div>
 </nav>
