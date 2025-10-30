@@ -1,27 +1,27 @@
 zh:
   - title: 首頁
-    url: /
+    url: "{{ '/index.html' | relative_url }}"
   - title: 服務
-    url: /services/
+    url: "{{ '/services/' | relative_url }}"
   - title: PatAxial
-    url: /pataxial/
+    url: "{{ '/pataxial/' | relative_url }}"
   - title: 部落格
-    url: /blog/
+    url: "{{ '/blog/' | relative_url }}"
   - title: 關於我們
-    url: /about/
+    url: "{{ '/about/' | relative_url }}"
   - title: 聯絡
-    url: /contact/
+    url: "{{ '/contact/' | relative_url }}"
 
 en:
   - title: Home
-    url: /en/
+    url: "{{ '/en/' | relative_url }}"
   - title: Services
-    url: /en/services/
+    url: "{{ '/en/services/' | relative_url }}"
   - title: PatAxial
-    url: /en/pataxial/
+    url: "{{ '/en/pataxial/' | relative_url }}"
   - title: Blog
-    url: /en/blog/
+    url: "{{ '/en/blog/' | relative_url }}"
   - title: About
-    url: /en/about/
+    url: "{{ '/en/about/' | relative_url }}"
   - title: Contact
-    url: /en/contact/
+    url: "{{ '/en/contact/' | relative_url }}"
