@@ -35,6 +35,5 @@ Eudaimonia IP 為多元行業提供支持，從高科技、生物技術到製造
 ---
 
 ### 聯絡我們
-- 地址：台北市復興南路一段 352 號 2 樓  
 - Email：genius@eudaimonia-ip.com  
 - Phone：+886 963 553 187
