@@ -24,7 +24,7 @@ to help organizations and research teams align innovation with intellectual prop
   </div>
 
   <div class="card">
-    <h3>PatAxial</h3>
+    <h3>PTAxial</h3>
     <p>A data-driven innovation methodology and workflow approach.</p>
     <p><a href="{{ '/en/pataxial/' | relative_url }}">Explore →</a></p>
   </div>

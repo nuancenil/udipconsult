@@ -12,14 +12,14 @@ hero_subtitle: 創新策略 × 智慧財產顧問
 我們協助團隊把研發與智慧財產連成一條線：從洞察 → 佈局 → 商業化，  
 在有限的資源下，「做對的事」「把事做對」。
 
-## 讓 Eudaimonia IP 為您的創新保駕護航 
-無論您是尋求首項專利保護的初創公司、擴展智慧財產組合的企業，還是需要熟悉台灣智慧財產法的跨國公司，Eudaimonia IP 都將支持您的成長之路。今天就與我們聯繫，了解我們如何制定專屬的智慧財產策略，為您在台灣及全球市場的競爭優勢保駕護航。
+## 讓 Eudaimonia IP Consulting 為您的創新保駕護航 
+無論您是尋求首項專利保護的初創公司、擴展智慧財產組合的企業，還是需要熟悉台灣智慧財產法的跨國公司，Eudaimonia IP Consulting 都將支持您的成長之路。今天就與我們聯繫，了解我們如何制定專屬的智慧財產策略，為您在台灣及全球市場的競爭優勢保駕護航。
 
 
 **我們專注於：**
 - 研發／專利策略（R&D + IP Strategy）
 - 產業與競品情報（Competitive Intelligence）
-- PatAxial 方法與工具導入（資料驅動的創新工作流）
+- PTAxial 方法與工具導入（資料驅動的創新工作流）
 
 ---
 
@@ -30,7 +30,7 @@ hero_subtitle: 創新策略 × 智慧財產顧問
     <p><a href="{{ '/services/' | relative_url }}">了解更多 →</a></p>
   </div>
   <div class="card">
-    <h3>PatAxial</h3>
+    <h3>PTAxial</h3>
     <p>以資料為軸的創新方法論與工具集，結合流程與指標，讓研發輸出與 IP 價值對齊。</p>
     <p><a href="{{ '/pataxial/' | relative_url }}">探索 →</a></p>
   </div>
