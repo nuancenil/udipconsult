@@ -1,23 +1,36 @@
 <!doctype html>
-<html lang="{{ page.lang | default: site.lang }}">
+<html lang="{{ page.lang | default: site.lang | default: 'zh' }}">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title | default: site.title }}</title>
-  {%- seo -%}
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title | default: "Eudaimonia IP" }}</title>
+  <!-- 關鍵：用 relative_url 自動處理自訂網域/子路徑 -->
   <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
-
+  {% seo %}
 </head>
 <body>
-  {% include nav.html %}
-  <main class="content container">
-    {{ content }}
-  </main>
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; {{ "now" | date: "%Y" }} Eudaimonia IP / UDIP Consult · All rights reserved.</p>
+  <nav class="site-nav">
+    <div class="nav-container">
+      <a class="site-title brand" href="{{ '/' | relative_url }}">Eudaimonia IP</a>
+      <ul class="nav-links">
+        <li><a href="{{ '/services/' | relative_url }}">服務</a></li>
+        <li><a href="{{ '/pataxial/' | relative_url }}">PTAxial</a></li>
+        <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">關於</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}">聯絡</a></li>
+      </ul>
+      <div class="nav-lang"><a href="/en/">EN</a></div>
     </div>
+  </nav>
+
+  <main class="content">
+    <div class="container">
+      {{ content }}
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© {{ "now" | date: "%Y" }} Eudaimonia IP</div>
   </footer>
 </body>
-
 </html>
