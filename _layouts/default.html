@@ -13,30 +13,7 @@
 </head>
 
 <body>
-  <nav class="site-nav">
-    <div class="nav-container">
-      {% assign lang = page.lang | default: site.lang | default: 'zh' %}
-      <a class="site-title brand" href="{{ '/' | relative_url }}">
-        {% if lang == 'zh' %}
-          寓待智權管理
-        {% else %}
-          Eudaimonia IP
-        {% endif %}
-      </a>
-
-      <ul class="nav-links">
-        <li><a href="{{ '/services/' | relative_url }}">服務</a></li>
-        <li><a href="{{ '/pataxial/' | relative_url }}">PTAxial</a></li>
-        <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
-        <li><a href="{{ '/about/' | relative_url }}">關於</a></li>
-        <li><a href="{{ '/contact/' | relative_url }}">聯絡</a></li>
-      </ul>
-
-      <div class="nav-lang">
-        <a href="/en/">EN</a>
-      </div>
-    </div>
-  </nav>
+  {% include nav.html %}
 
   <main class="content">
     <div class="container">
