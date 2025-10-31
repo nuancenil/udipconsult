@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title | default: "Eudaimonia IP" }}</title>
   <!-- 關鍵：用 relative_url 自動處理自訂網域/子路徑 -->
-  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
   {% seo %}
 </head>
 <body>
