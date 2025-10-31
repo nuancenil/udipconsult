@@ -3,16 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title | default: "Eudaimonia IP" }}</title>
-  <!-- 關鍵：用 relative_url 自動處理自訂網域/子路徑 -->
+  <title>
+    {% if page.title %}{{ page.title }} · {% endif %}
+    {{ site.title | default: "寓待智權管理 · Eudaimonia IP" }}
+  </title>
+  <!-- 關鍵：自動適配自訂網域/子路徑 -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-
   {% seo %}
 </head>
+
 <body>
   <nav class="site-nav">
     <div class="nav-container">
-      <a class="site-title brand" href="{{ '/' | relative_url }}">Eudaimonia IP</a>
+      {% assign lang = page.lang | default: site.lang | default: 'zh' %}
+      <a class="site-title brand" href="{{ '/' | relative_url }}">
+        {% if lang == 'zh' %}
+          寓待智權管理
+        {% else %}
+          Eudaimonia IP
+        {% endif %}
+      </a>
+
       <ul class="nav-links">
         <li><a href="{{ '/services/' | relative_url }}">服務</a></li>
         <li><a href="{{ '/pataxial/' | relative_url }}">PTAxial</a></li>
@@ -20,7 +31,10 @@
         <li><a href="{{ '/about/' | relative_url }}">關於</a></li>
         <li><a href="{{ '/contact/' | relative_url }}">聯絡</a></li>
       </ul>
-      <div class="nav-lang"><a href="/en/">EN</a></div>
+
+      <div class="nav-lang">
+        <a href="/en/">EN</a>
+      </div>
     </div>
   </nav>
 
@@ -31,7 +45,9 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">© {{ "now" | date: "%Y" }} Eudaimonia IP</div>
+    <div class="container">
+      © {{ "now" | date: "%Y" }} 寓待智權管理 · Eudaimonia IP
+    </div>
   </footer>
 </body>
 </html>
