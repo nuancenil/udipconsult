@@ -42,8 +42,16 @@ git push
 
 #一般部署
 
-git add -A
-git commit -m "update site content"
-git pull --rebase origin main
-git push origin main
 
+
+🚀 想再簡化？可以設成 alias：
+
+在終端機打：
+
+git config --global alias.ap '!git add -A && git commit -m "update" && git push'
+
+以後你只要輸入：
+git ap
+
+就等於自動幫你完成「add + commit + push」✨
+（訊息是 "update"，你也可以改成自己的預設）

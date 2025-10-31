@@ -26,11 +26,13 @@
 
     <!-- 右：語言切換 -->
     <div class="nav-lang">
-      {% if page.lang == 'en' %}
-        <a href="{{ '/' | relative_url }}">中文</a>
-      {% else %}
-        <a href="{{ '/en/' | relative_url }}">EN</a>
-      {% endif %}
+    {% assign current_path = page.url %}
+    {% if page.lang == 'en' %}
+    {% assign target = current_path | replace_first:'/en','' %}
+    <a href="{{ target | relative_url }}">中文</a>
+    {% else %}
+    <a href="{{ '/en' | append: current_path | relative_url }}">EN</a>
+    {% endif %}
     </div>
 
   </div>
