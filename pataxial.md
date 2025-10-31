@@ -34,3 +34,18 @@ PTAxial 的核心目的，是將您從繁瑣的資料整理與版本對照中解
 
 無論您是智財法務、專利分析師、R&D 人員，還是需要做出策略決策的管理者，PTAxial 都將是您不可或缺的得力夥伴。
 ---
+
+---
+
+##  PTAxial<sup>™</sup> online
+
+<div style="text-align:center; margin: 2em 0;">
+  <iframe 
+    src="https://ptaxial.eudaimonia-ip.com/"
+    width="100%" 
+    height="800" 
+    style="border: none; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"
+    loading="lazy"
+    allowfullscreen>
+  </iframe>
+</div>
