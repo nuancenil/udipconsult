@@ -24,6 +24,3 @@ With a rich background in Taiwan’s pharmaceutical sector and extensive in-firm
 
 ​“Skate to where the puck is going to be, not where it has been." -Wayne Gretzky 
 
-
-- Email: genius@eudaimonia-ip.com
-- Location: Taipei / Remote
