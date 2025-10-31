@@ -39,13 +39,7 @@ PTAxial 的核心目的，是將您從繁瑣的資料整理與版本對照中解
 
 ##  PTAxial<sup>™</sup> online
 
-<div style="text-align:center; margin: 2em 0;">
-  <iframe 
-    src="https://ptaxial.eudaimonia-ip.com/"
-    width="100%" 
-    height="800" 
-    style="border: none; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"
-    loading="lazy"
-    allowfullscreen>
-  </iframe>
-</div>
+<a href="https://ptaxial.eudaimonia-ip.com/" target="_blank" rel="noopener noreferrer">
+  前往 PTAxial™
+</a>
+
