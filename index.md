@@ -30,7 +30,7 @@ hero_subtitle: 創新策略 × 智慧財產顧問
     <p><a href="{{ '/services/' | relative_url }}">了解更多 →</a></p>
   </div>
   <div class="card">
-    <h3>PTAxial</h3>
+    <h3>PTAxial <sup>™</sup></h3>
     <p>以資料為軸的創新方法論與工具集，結合流程與指標，讓研發輸出與 IP 價值對齊。</p>
     <p><a href="{{ '/pataxial/' | relative_url }}">探索 →</a></p>
   </div>
