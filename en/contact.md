@@ -7,6 +7,7 @@ permalink: /en/contact/
 ---
 
 
-To discuss a project or collaboration, email **genius@eudaimonia-ip.com**.
+To discuss a project or collaboration
+- Email：[genius@eudaimonia-ip.com](mailto:genius@eudaimonia-ip.com)
 
 You may include your target market, technical domain, timeline, and budget. We'll reply within two business days.
