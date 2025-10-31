@@ -45,7 +45,7 @@ The core purpose of PTAxial™ is to liberate you from tedious data compilation 
 It transforms static patent lists into a **visual, editable, and manageable intelligence dashboard** — simplifying workflows, improving efficiency, and enhancing analytical depth.  
 Every piece of patent data becomes a strategic driver for decision-making.
 
-Whether you are an **IP legal professional**, **patent analyst**, **R&D specialist**, or a **strategic decision-maker**, PTAxial™ will be your indispensable partner.
+Whether you are an **IP legal professional**, **patent analyst**, **R&D specialist**, or a **strategic decision-maker**, PTAxial™ could be your indispensable partner.
 
 ---
 
