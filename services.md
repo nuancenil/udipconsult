@@ -35,5 +35,5 @@ Eudaimonia IP 為多元行業提供支持，從高科技、生物技術到製造
 ---
 
 ### 聯絡我們
-- Email：genius@eudaimonia-ip.com  
+- Email：[genius@eudaimonia-ip.com](mailto:genius@eudaimonia-ip.com) 
 - Phone：+886 963 553 187
