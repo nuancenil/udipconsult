@@ -445,3 +445,90 @@ a:focus-visible, .button:focus-visible, button:focus-visible {
 /* 讓主要內容底部不要被貼齊邊界（再加一點空氣感） */
 main.content{ padding-inline: var(--page-xpad); }
 
+/* ====== Navigation Bar Styling ====== */
+.site-nav {
+  background: linear-gradient(to right, var(--brand), #cdd9de);
+  color: var(--text);
+  padding: 0.6rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 品牌名稱 */
+.nav-brand .site-title {
+  font-family: "Forum", "Noto Sans TC", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text);
+  transition: color 0.2s ease;
+}
+.nav-brand .site-title:hover {
+  color: var(--accent);
+}
+
+/* 導覽連結 */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* 語言切換 */
+.nav-lang {
+  margin-left: auto;
+}
+
+.nav-lang a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+  padding: 0.4em 0.8em;
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  transition: all 0.25s ease;
+}
+
+.nav-lang a:hover {
+  background-color: var(--accent);
+  color: white;
+}
+
+/* 響應式 */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+  .nav-lang {
+    align-self: flex-end;
+    margin-top: 0.5rem;
+  }
+}
