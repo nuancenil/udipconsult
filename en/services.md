@@ -7,7 +7,7 @@ hero_subtitle: Using data and strategy to innovate the right way
 permalink: /en/services/
 ---
 
-# Our Services
+## Our Services
 
 Eudaimonia IP supports a wide range of industries, from high-tech and biotechnology to manufacturing and consumer goods. With Hazel’s extensive experience in the pharmaceutical industry, we are particularly adept at supporting innovation-intensive and highly regulated sectors—ensuring that IP strategies are both technically sound and commercially viable.
 

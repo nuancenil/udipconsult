@@ -6,8 +6,6 @@ en_url: /en/about/
 permalink: /about/
 ---
 
-我們的服務
-
 #### 關於 Eudaimonia IP Consulting
 
 Eudaimonia IP Consulting 是台灣智慧財產（IP）服務類型先行者，結合深厚的法律專業知識與技術專長，協助客戶保護、管理並善用其創新成果。我們秉持卓越與客戶成功的承諾，提供全面的智慧財產服務，致力於引導客戶在台灣及全球複雜的法規環境中順利前行。

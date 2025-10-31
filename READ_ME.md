@@ -40,3 +40,10 @@ git add -A
 git commit -m "Style buttons; verify About/Contact links from index"
 git push
 
+#一般部署
+
+git add -A
+git commit -m "update site content"
+git pull --rebase origin main
+git push origin main
+

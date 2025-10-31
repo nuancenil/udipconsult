@@ -7,7 +7,7 @@ hero_subtitle: 用資料與方法，將創新做對的事
 permalink: /services/
 ---
 
-# 我們的服務
+## 我們的服務
 
 Eudaimonia IP 為多元行業提供支持，從高科技、生物技術到製造業和消費品。Hazel 在製藥業的經驗，尤其使 Eudaimonia IP 能夠支援創新密集且受監管的產業，確保智慧財產策略既具技術深度又具商業可行性。
 
