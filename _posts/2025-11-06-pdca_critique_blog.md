@@ -73,7 +73,7 @@ en_url: /en/2025/11/06/pdca-en/
    [https://www.vankemenade-act.nl/wp-content/uploads/2017/08/THE-MYTH-OF-THE-PDCAnomps-1.pdf](https://www.vankemenade-act.nl/wp-content/uploads/2017/08/THE-MYTH-OF-THE-PDCAnomps-1.pdf)
 
 2. **Gupta, P. (2006).** *Beyond PDCA – A New Process Management Model.* Quality Progress, 39(7), 45-52.  
-   [https://www.researchgate.net/publication/259497347_Beyond_PDCA_-_A_new_process_management_model](https://www.researchgate.net/publication/259497347_Beyond_PDCA_-_A_new_process_management_model)
+   [https://www.researchgate.net/publication/259497347_Beyond_PDCA_-_A_new_process_management_model] (https://www.researchgate.net/publication/259497347_Beyond_PDCA_-_A_new_process_management_model)
 
 3. **Reed, J. E., & Card, A. J. (2016).** *The problem with Plan-Do-Study-Act cycles.* BMJ Quality & Safety, 25(3), 147-152.
 
