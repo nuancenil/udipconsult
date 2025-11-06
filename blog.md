@@ -3,6 +3,7 @@ layout: default
 title: 部落格 Blog
 lang: zh
 permalink: /blog/
+en_url: /en/blog/
 ---
 
 # 部落格 Blog

@@ -3,6 +3,7 @@ layout: default
 title: Blog
 lang: en
 permalink: /en/blog/
+zh_url: /blog/
 ---
 
 # Blog
