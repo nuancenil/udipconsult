@@ -62,7 +62,7 @@ These critiques provide a theoretical trajectory: moving from "process improveme
 2. Simultaneously adopting more dynamically adaptive frameworks (such as ACCRA, System Dynamics, feedback loop analysis)
 3. Not "abandoning PDCA," but rather "returning PDCA to its most suitable position"
 
-In other words, establishing auxiliary tools and mindsets for volatility and uncertainty is essential to truly unleash organizational adaptability and innovative capacity.
+In other words, establishing suitable auxiliary tools and mindsets for volatility and uncertainty is essential to truly unleash organizational adaptability and innovative capacity.
 
 ---
 
