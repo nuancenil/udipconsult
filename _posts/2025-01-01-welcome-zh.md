@@ -4,7 +4,7 @@ title: 歡迎來到 UDIP Consult
 lang: zh
 description: 這是一篇範例文章。你可以在 _posts/ 新增 Markdown 檔，Jekyll 會自動建立文章頁面。
 permalink: /2025/01/01/welcome-en/
-en_url: /en/2025/01/01/welcome-en/
+en_url: /2025/01/01/welcome-en/
 ---
 
 
