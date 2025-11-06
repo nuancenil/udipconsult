@@ -27,11 +27,9 @@
     <!-- 右：語言切換 -->
     <div class="nav-lang">
     {% if page.lang == 'en' and page.zh_url %}
-    {# 目前是英文頁 #}
     <span class="current-lang">EN</span>
     <a href="{{ page.zh_url | relative_url }}">中文</a>
     {% elsif page.lang == 'zh' and page.en_url %}
-    {# 目前是中文頁 #}
     <span class="current-lang">中文</span>
     <a href="{{ page.en_url | relative_url }}">EN</a>
     {% endif %}
