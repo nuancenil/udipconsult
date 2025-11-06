@@ -1,3 +1,10 @@
+---
+layout: default
+title: The Myth and Limitations of the PDCA Cycle
+lang: en
+description: This essay explores that paradox—how the PDCA cycle, while invaluable for order and consistency, can unintentionally constrain the very dynamics that fuel innovation.
+zh_url: /2025/11/06/pdca-zh/
+---
 # The Myth and Limitations of the PDCA Cycle
 
 ## 1. Why PDCA Has Been Widely Adopted
