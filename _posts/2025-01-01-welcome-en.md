@@ -2,7 +2,6 @@
 layout: default
 title: Welcome to UDIP Consult
 lang: en
-description: This is a sample post. Add Markdown files under _posts/ and Jekyll will generate blog pages automatically.
 permalink: /2025/01/01/welcome-en/
 zh_url: /2025/01/01/welcome-zh/
 ---
