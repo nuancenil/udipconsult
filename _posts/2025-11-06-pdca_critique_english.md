@@ -1,0 +1,74 @@
+# The Myth and Limitations of the PDCA Cycle
+
+## 1. Why PDCA Has Been Widely Adopted
+
+The PDCA cycle—"Plan → Do → Check → Act"—is a classic model for quality management and continuous process improvement. Its most common applications include:
+
+- **Quality Control**
+- **Process Improvement**
+- **Management Systems** (such as ISO 9001) improvement mechanisms
+
+Its strengths lie in clear processes, distinct phases, and repeatability, making it highly suitable for "predictable and controllable" environments.
+
+---
+
+## 2. When Environments Become Unstable—PDCA's Limitations Emerge
+
+### 1. Challenges in Facing Emergent Change
+
+Dutch scholar Everard van Kemenade, in his paper "The Myth of the PDCA-Cycle in Times of Emergent Change," points out that when "change is unpredictable and emerges from the periphery," continuing to use PDCA as a vehicle for change often leads to delays and rigidity. This is because PDCA's assumption—"plan first → execute → check → improve"—does not align with the characteristics of dynamic, complex systems.
+
+He further proposes an alternative framework, **ACCRA** (Attention / Context / Commitment / Reflection / Action), as a more practical approach in uncertain contexts.
+
+### 2. Tendency to Become Formalistic in Practice
+
+In fields such as healthcare and education, research has found that PDCA or its variant PDSA (Plan–Do–Study–Act) is often treated as a reporting or audit process rather than a genuine learning cycle. For instance, John E. Reed et al., in their BMJ Quality & Safety study, note that most organizations view it as an "execute→document→complete" process rather than a "reflect→learn→innovate" mechanism.
+
+### 3. Structural Limitations: Slow, Rigid, Lacking Human Considerations
+
+Other research has also identified several limitations of PDCA:
+
+- **Slow pace**: Executing a complete PDCA cycle requires repeated collection, checking, and improvement, making it difficult to match the pace of innovation
+- **Ritualization risk**: When PDCA becomes an institutionalized process, it easily evolves into "auditing for the sake of auditing"
+- **Neglect of human factors**: Traditional PDCA assumes rational operation but overlooks culture, motivation, creativity, and other factors
+
+---
+
+## 3. Calls to "Move Beyond PDCA"
+
+Quality scholar Praveen Gupta, in "Beyond PDCA – A New Process Management Model," criticizes that although ISO 9001 incorporates PDCA, its implementation often becomes "audit-oriented" rather than "innovation-oriented." Therefore, a management model is needed that not only improves processes but also supports innovation dynamics.
+
+These critiques provide a theoretical trajectory: moving from "process improvement" toward "innovation and dynamic adaptation."
+
+---
+
+## 4. What Insights Can We Gain?
+
+**PDCA is not entirely obsolete—the key lies in context:**
+
+- In stable, predictable environments, PDCA remains effective
+- However, in highly dynamic scenarios requiring breakthrough innovation, relying solely on PDCA may be insufficient
+
+**If your organization faces needs such as innovation, knowledge accumulation, or new business models, consider:**
+
+1. Treating PDCA as a foundational structural tool
+2. Simultaneously adopting more dynamically adaptive frameworks (such as ACCRA, System Dynamics, feedback loop analysis)
+3. Not "abandoning PDCA," but rather "returning PDCA to its most suitable position"
+
+In other words, establishing auxiliary tools and mindsets for volatility and uncertainty is essential to truly unleash organizational adaptability and innovative capacity.
+
+---
+
+## 5. Further Reading
+
+1. **Van Kemenade, E. (2014).** *The Myth of the PDCA-Cycle in Times of Emergent Change.*  
+   [https://www.vankemenade-act.nl/wp-content/uploads/2017/08/THE-MYTH-OF-THE-PDCAnomps-1.pdf](https://www.vankemenade-act.nl/wp-content/uploads/2017/08/THE-MYTH-OF-THE-PDCAnomps-1.pdf)
+
+2. **Gupta, P. (2006).** *Beyond PDCA – A New Process Management Model.* Quality Progress, 39(7), 45-52.  
+   [https://www.researchgate.net/publication/259497347_Beyond_PDCA_-_A_new_process_management_model](https://www.researchgate.net/publication/259497347_Beyond_PDCA_-_A_new_process_management_model)
+
+3. **Reed, J. E., & Card, A. J. (2016).** *The problem with Plan-Do-Study-Act cycles.* BMJ Quality & Safety, 25(3), 147-152.
+
+---
+
+*This article aims to explore the boundaries of PDCA's applicability, not to completely negate its value. In appropriate contexts, PDCA remains a reliable management tool.*

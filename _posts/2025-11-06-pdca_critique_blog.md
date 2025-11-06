@@ -1,0 +1,74 @@
+# PDCA 循環的迷思與侷限
+
+## 一、PDCA 為何被廣泛採用
+
+「Plan → Do → Check → Act」的 PDCA 循環，是品質管理與流程持續改善的經典模式。它最常見的應用情境包括：
+
+- **品質控管**（Quality Control）
+- **流程優化**（Process Improvement）
+- **管理體系**（如 ISO 9001）中的改進機制
+
+其優點在於流程明確、環節清晰、可重複執行，非常適合「可預見且可控」的環境。
+
+---
+
+## 二、當環境變得不穩定時——PDCA 的侷限逐漸浮現
+
+### 1. 面對突發性變化（Emergent Change）的挑戰
+
+荷蘭學者 Everard van Kemenade 在《The Myth of the PDCA-Cycle in Times of Emergent Change》一文中指出，在「變化不可預期、從邊緣浮現」的狀況下，仍以 PDCA 做為變革載體，往往會造成延遲與僵化。因為 PDCA 假設的「事先計畫 → 執行 → 檢查 → 改進」流程，並不符合動態、複雜系統的特質。
+
+他進一步提出替代框架 **ACCRA**（Attention / Context / Commitment / Reflection / Action），作為在不確定情境下更貼近實務的方法。
+
+### 2. 實務運作中容易流於形式化
+
+在醫療、教育等領域，研究發現 PDCA 或其變體 PDSA（Plan–Do–Study–Act）常被當成報告或稽核流程，而非真實的學習循環。例如 John E. Reed 等人在 BMJ Quality & Safety 的研究指出，多數組織將其視為「執行→文件→完成」的流程，而非「反思→學習→創新」的機制。
+
+### 3. 結構性侷限：慢、僵化、缺乏人本考量
+
+其他研究也指出 PDCA 的幾項限制：
+
+- **速度緩慢**：執行完整 PDCA 需反覆蒐集、檢查、改進，不易匹配創新節奏
+- **儀式化風險**：當 PDCA 成為制度化流程，易演變為「為了稽核而稽核」的儀式
+- **忽略人性因素**：傳統 PDCA 假設人是理性運作，但忽略文化、動機、創意等因素
+
+---
+
+## 三、「跳脫 PDCA」的呼聲
+
+品質領域學者 Praveen Gupta 在《Beyond PDCA – A New Process Management Model》中批評，雖然 ISO 9001 將 PDCA 納入標準，但導入後常淪為「稽核導向」而非「創新導向」。因此需要一個不僅能改善流程，還能支援創新動態的管理模型。
+
+這些批判提供了一條理論脈絡：從「流程改進」走向「創新與動態適應」。
+
+---
+
+## 四、我們能從中得到什麼啟示？
+
+**PDCA 並非全然過時，關鍵在於適用情境：**
+
+- 在穩定、可預測的環境中，PDCA 依然有效
+- 但在高度變動、需要突破創新的場景中，僅靠 PDCA 可能不足
+
+**如果你的組織面對的是創新、知識累積、新商業模式等需求，建議：**
+
+1. 將 PDCA 視為結構性的基礎工具
+2. 同時併用更具動態適應能力的框架（如 ACCRA、系統動力學、反饋迴路分析）
+3. 不是「放棄 PDCA」，而是「讓 PDCA 回到它最適用的位置」
+
+換句話說，為變動與未知建立輔助工具與思維，才能真正發揮組織的適應力與創新力。
+
+---
+
+## 五、延伸閱讀
+
+1. **Van Kemenade, E. (2014).** *The Myth of the PDCA-Cycle in Times of Emergent Change.*  
+   [https://www.vankemenade-act.nl/wp-content/uploads/2017/08/THE-MYTH-OF-THE-PDCAnomps-1.pdf](https://www.vankemenade-act.nl/wp-content/uploads/2017/08/THE-MYTH-OF-THE-PDCAnomps-1.pdf)
+
+2. **Gupta, P. (2006).** *Beyond PDCA – A New Process Management Model.* Quality Progress, 39(7), 45-52.  
+   [https://www.researchgate.net/publication/259497347_Beyond_PDCA_-_A_new_process_management_model](https://www.researchgate.net/publication/259497347_Beyond_PDCA_-_A_new_process_management_model)
+
+3. **Reed, J. E., & Card, A. J. (2016).** *The problem with Plan-Do-Study-Act cycles.* BMJ Quality & Safety, 25(3), 147-152.
+
+---
+
+*本文旨在探討 PDCA 的適用邊界，而非全盤否定其價值。在適當情境下，PDCA 仍是可靠的管理工具。*
