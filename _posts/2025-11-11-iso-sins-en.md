@@ -32,3 +32,10 @@ Perhaps the most fundamental original sin lies in the absence of authentic leade
 ---
 
 **The path forward requires confronting these original sins directly.** ISO certifications should be reimagined not as destinations but as journeys toward organizational excellence—journeys that demand authentic leadership, cultural transformation, and a willingness to challenge the very bureaucracy these standards can inadvertently create. Until organizations address these fundamental sins, each new ISO standard adopted will simply replicate the same failures in a different domain.
+
+---
+
+## References
+
+Monat, J. P., & Gannon, T. F. (2023). *Evaluation of ISO 9001 barriers in Manufacturing Organizations using ISM-Fuzzy MICMAC approach.* *Journal of Innovation and Knowledge Management*, 9(1).  
+[https://www.worldscientific.com/doi/abs/10.1142/S2424862223500124](https://www.worldscientific.com/doi/abs/10.1142/S2424862223500124)

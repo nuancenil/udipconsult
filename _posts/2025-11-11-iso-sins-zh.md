@@ -24,3 +24,10 @@ en_url: /2025/11/11/iso-sins-en/
 ---
 
 **前進的道路需要直面這些原罪。** ISO 認證應該被重新定義——不是終點，而是邁向組織卓越的旅程；需要真誠領導、文化轉型，以及願意挑戰這些標準本身可能無意間造成的官僚主義的旅程。在組織處理這些根本原罪之前，每一個新採用的 ISO 標準都只會在不同領域複製相同的失敗。
+
+---
+
+## 參考文獻
+
+Monat, J. P., & Gannon, T. F. (2023)。〈Evaluation of ISO 9001 barriers in Manufacturing Organizations using ISM-Fuzzy MICMAC approach〉。《Journal of Innovation and Knowledge Management》，9(1)。  
+[https://www.worldscientific.com/doi/abs/10.1142/S2424862223500124](https://www.worldscientific.com/doi/abs/10.1142/S2424862223500124)
