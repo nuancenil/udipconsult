@@ -17,33 +17,27 @@ permalink: /contact/
 
 <div id="comments"></div>
 
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const name  = nameInput.value.trim();
+  const email = emailInput.value.trim();   // 👈 新增這行
+  const msg   = msgInput.value.trim();
 
-<form id="comment-form">
-  <p>
-    <label>您的稱呼：<br>
-      <input type="text" id="name" required maxlength="40">
-    </label>
-  </p>
-  <p>
-  <label>Email（必填，不會公開顯示，只用於回覆）：<br>
-    <input
-      type="email"
-      id="email"
-      name="email"
-      required
-      maxlength="100"
-      autocomplete="off">
-    </label>
-    </p>
-  <p>
-    <label>留言內容：<br>
-      <textarea id="message" required maxlength="500"></textarea>
-    </label>
-  </p>
-  <p>
-    <button type="submit">送出留言</button>
-  </p>
-</form>
+  if (!name || !email || !msg) {
+    return;
+  }
+
+  await addDoc(commentsCol, {
+    name,
+    email,
+    msg,
+    createdAt: serverTimestamp()
+  });
+
+  nameInput.value = "";
+  emailInput.value = "";
+  msgInput.value = "";
+});
 
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
