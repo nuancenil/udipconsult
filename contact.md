@@ -17,6 +17,7 @@ permalink: /contact/
 
 <div id="comments"></div>
 
+
 <form id="comment-form">
   <p>
     <label>您的稱呼：<br>
@@ -75,14 +76,21 @@ permalink: /contact/
     msgInput.value = "";
   });
 
-  const q = query(commentsCol, orderBy("createdAt", "desc"));
-  onSnapshot(q, (snapshot) => {
-    commentsDiv.innerHTML = "";
-    snapshot.forEach((doc) => {
-      const data = doc.data();
-      const p = document.createElement("p");
-      p.innerHTML = `<strong>${data.name}</strong>：${data.msg}`;
-      commentsDiv.appendChild(p);
-    });
+const q = query(commentsCol, orderBy("createdAt", "desc"));
+onSnapshot(q, (snapshot) => {
+  commentsDiv.innerHTML = "";
+  snapshot.forEach((doc) => {
+    const data = doc.data();
+    const p = document.createElement("p");
+
+    const safeName = maskName(data.name);
+    const timeText = formatTimestamp(data.createdAt);
+
+    // 只顯示遮蔽姓名 + 時間，不顯示內容
+    p.textContent = `${safeName} 於 ${timeText} 留下一則訊息。`;
+    commentsDiv.appendChild(p);
   });
+});
+
+
 </script>
