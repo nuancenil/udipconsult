@@ -42,7 +42,9 @@ permalink: /contact/
         id="message"
         name="message"
         required
-        maxlength="500"></textarea>
+        maxlength="500"
+        rows="6"
+        style="height: 180px;"></textarea>
     </label>
     </p>
     <p style="display:none;">
