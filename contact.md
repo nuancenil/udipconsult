@@ -25,6 +25,17 @@ permalink: /contact/
     </label>
   </p>
   <p>
+  <label>Email（必填，不會公開顯示，只用於回覆）：<br>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      required
+      maxlength="100"
+      autocomplete="off">
+    </label>
+    </p>
+  <p>
     <label>留言內容：<br>
       <textarea id="message" required maxlength="500"></textarea>
     </label>
@@ -59,6 +70,7 @@ permalink: /contact/
   const commentsDiv = document.getElementById("comments");
   const form = document.getElementById("comment-form");
   const nameInput = document.getElementById("name");
+  const emailInput = document.getElementById("email");   // 👈 新增
   const msgInput = document.getElementById("message");
 
   // 🔹 名字遮蔽
@@ -85,14 +97,18 @@ permalink: /contact/
     e.preventDefault();
     const name = nameInput.value.trim();
     const msg = msgInput.value.trim();
-    if (!name || !msg) return;
+    if (!name || !email || !msg) {
+    return;
+    }
 
     await addDoc(commentsCol, {
       name,
+      email,
       msg,
       createdAt: serverTimestamp()
     });
-
+    nameInput.value = "";
+    emailInput.value = "";
     msgInput.value = "";
   });
 
