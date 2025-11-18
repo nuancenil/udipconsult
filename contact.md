@@ -6,8 +6,6 @@ en_url: /en/contact/
 permalink: /contact/
 ---
 
-
-
 如果你想與我們討論項目或合作，歡迎來信：
 - Email：[genius@eudaimonia-ip.com](mailto:genius@eudaimonia-ip.com)
 
@@ -17,27 +15,42 @@ permalink: /contact/
 
 <div id="comments"></div>
 
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-  const name  = nameInput.value.trim();
-  const email = emailInput.value.trim();   // 👈 新增這行
-  const msg   = msgInput.value.trim();
-
-  if (!name || !email || !msg) {
-    return;
-  }
-
-  await addDoc(commentsCol, {
-    name,
-    email,
-    msg,
-    createdAt: serverTimestamp()
-  });
-
-  nameInput.value = "";
-  emailInput.value = "";
-  msgInput.value = "";
-});
+<form id="comment-form">
+  <p>
+    <label>您的稱呼：<br>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        maxlength="40"
+        autocomplete="off">
+    </label>
+  </p>
+  <p>
+    <label>Email（必填，不會公開顯示，只用於回覆）：<br>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        maxlength="100"
+        autocomplete="off">
+    </label>
+  </p>
+  <p>
+    <label>留言內容：<br>
+      <textarea
+        id="message"
+        name="message"
+        required
+        maxlength="500"></textarea>
+    </label>
+  </p>
+  <p>
+    <button type="submit">送出留言</button>
+  </p>
+</form>
 
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
@@ -46,16 +59,16 @@ form.addEventListener("submit", async (e) => {
     query, orderBy, serverTimestamp
   } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
-  // 🔹 在這一行下面貼上你從 Firebase 拿到的那段 firebaseConfig
+  // ★ 這裡貼上你自己的 firebaseConfig ★
   const firebaseConfig = {
-  apiKey: "AIzaSyCdgL9VmR4U54lU8ovgezaADJNNSq_Mg9w",
-  authDomain: "udip-comments-web.firebaseapp.com",
-  projectId: "udip-comments-web",
-  storageBucket: "udip-comments-web.firebasestorage.app",
-  messagingSenderId: "642386138134",
-  appId: "1:642386138134:web:ac05906d1af96eef7b5137",
-  measurementId: "G-5B48YFYV3M"
-};
+    apiKey: "你的 apiKey",
+    authDomain: "你的專案ID.firebaseapp.com",
+    projectId: "你的專案ID",
+    storageBucket: "你的專案ID.firebasestorage.app",
+    messagingSenderId: "xxxxxxx",
+    appId: "1:xxxx:web:xxxx",
+    measurementId: "G-XXXXX"
+  };
 
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
@@ -64,10 +77,9 @@ form.addEventListener("submit", async (e) => {
   const commentsDiv = document.getElementById("comments");
   const form = document.getElementById("comment-form");
   const nameInput = document.getElementById("name");
-  const emailInput = document.getElementById("email");   // 👈 新增
+  const emailInput = document.getElementById("email");
   const msgInput = document.getElementById("message");
 
-  // 🔹 名字遮蔽
   function maskName(name) {
     if (!name) return "匿名";
     const trimmed = name.trim();
@@ -75,7 +87,6 @@ form.addEventListener("submit", async (e) => {
     return firstChar + "＊＊";
   }
 
-  // 🔹 格式化時間（YYYY-MM-DD HH:mm）
   function formatTimestamp(ts) {
     if (!ts || !ts.toDate) return "";
     const d = ts.toDate();
@@ -89,10 +100,12 @@ form.addEventListener("submit", async (e) => {
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
-    const name = nameInput.value.trim();
-    const msg = msgInput.value.trim();
+    const name  = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const msg   = msgInput.value.trim();
+
     if (!name || !email || !msg) {
-    return;
+      return;
     }
 
     await addDoc(commentsCol, {
@@ -101,6 +114,7 @@ form.addEventListener("submit", async (e) => {
       msg,
       createdAt: serverTimestamp()
     });
+
     nameInput.value = "";
     emailInput.value = "";
     msgInput.value = "";
@@ -116,11 +130,8 @@ form.addEventListener("submit", async (e) => {
       const safeName = maskName(data.name);
       const timeText = formatTimestamp(data.createdAt);
 
-      // 只顯示遮蔽姓名 + 時間，不顯示內容
       p.textContent = `${safeName} 於 ${timeText} 留下一則訊息。`;
       commentsDiv.appendChild(p);
     });
   });
-
-
 </script>
