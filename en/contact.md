@@ -71,16 +71,16 @@ We will get back to you within 2 business days.
     query, orderBy, serverTimestamp, limit
   } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
-  // 👉 把這個 firebaseConfig 換成「跟中文 contact 頁一模一樣」的那一段
   const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "udip-comments-web.firebaseapp.com",
-    projectId: "udip-comments-web",
-    storageBucket: "udip-comments-web.firebasestorage.app",
-    messagingSenderId: "642386138134",
-    appId: "1:642386138134:web:ac05906d1af96eef7b5137",
-    measurementId: "G-5B48YFYV3M"
-  };
+  apiKey: "AIzaSyCdgL9VmR4U54lU8ovgezaADJNNSq_Mg9w",
+  authDomain: "udip-comments-web.firebaseapp.com",
+  projectId: "udip-comments-web",
+  storageBucket: "udip-comments-web.firebasestorage.app",
+  messagingSenderId: "642386138134",
+  appId: "1:642386138134:web:ac05906d1af96eef7b5137",
+  measurementId: "G-5B48YFYV3M"
+};
+
 
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
