@@ -15,7 +15,6 @@ We will get back to you within 2 business days.
 
 ## Leave us a message
 
-<div id="comments"></div>
 
 <form id="comment-form">
   <p>
@@ -63,6 +62,8 @@ We will get back to you within 2 business days.
     <button type="submit">Send message</button>
   </p>
 </form>
+
+<div id="comments"></div>
 
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
