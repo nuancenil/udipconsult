@@ -61,14 +61,15 @@ permalink: /contact/
 
   // ★ 這裡貼上你自己的 firebaseConfig ★
   const firebaseConfig = {
-    apiKey: "你的 apiKey",
-    authDomain: "你的專案ID.firebaseapp.com",
-    projectId: "你的專案ID",
-    storageBucket: "你的專案ID.firebasestorage.app",
-    messagingSenderId: "xxxxxxx",
-    appId: "1:xxxx:web:xxxx",
-    measurementId: "G-XXXXX"
-  };
+  apiKey: "AIzaSyCdgL9VmR4U54lU8ovgezaADJNNSq_Mg9w",
+  authDomain: "udip-comments-web.firebaseapp.com",
+  projectId: "udip-comments-web",
+  storageBucket: "udip-comments-web.firebasestorage.app",
+  messagingSenderId: "642386138134",
+  appId: "1:642386138134:web:ac05906d1af96eef7b5137",
+  measurementId: "G-5B48YFYV3M"
+    };
+
 
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
