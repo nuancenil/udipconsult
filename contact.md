@@ -61,6 +61,26 @@ permalink: /contact/
   const nameInput = document.getElementById("name");
   const msgInput = document.getElementById("message");
 
+  // 🔹 名字遮蔽
+  function maskName(name) {
+    if (!name) return "匿名";
+    const trimmed = name.trim();
+    const firstChar = trimmed[0];
+    return firstChar + "＊＊";
+  }
+
+  // 🔹 格式化時間（YYYY-MM-DD HH:mm）
+  function formatTimestamp(ts) {
+    if (!ts || !ts.toDate) return "";
+    const d = ts.toDate();
+    const yyyy = d.getFullYear();
+    const mm = String(d.getMonth() + 1).padStart(2, "0");
+    const dd = String(d.getDate()).padStart(2, "0");
+    const hh = String(d.getHours()).padStart(2, "0");
+    const mi = String(d.getMinutes()).padStart(2, "0");
+    return `${yyyy}-${mm}-${dd} ${hh}:${mi}`;
+  }
+
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const name = nameInput.value.trim();
@@ -76,21 +96,21 @@ permalink: /contact/
     msgInput.value = "";
   });
 
-const q = query(commentsCol, orderBy("createdAt", "desc"));
-onSnapshot(q, (snapshot) => {
-  commentsDiv.innerHTML = "";
-  snapshot.forEach((doc) => {
-    const data = doc.data();
-    const p = document.createElement("p");
+  const q = query(commentsCol, orderBy("createdAt", "desc"));
+  onSnapshot(q, (snapshot) => {
+    commentsDiv.innerHTML = "";
+    snapshot.forEach((doc) => {
+      const data = doc.data();
+      const p = document.createElement("p");
 
-    const safeName = maskName(data.name);
-    const timeText = formatTimestamp(data.createdAt);
+      const safeName = maskName(data.name);
+      const timeText = formatTimestamp(data.createdAt);
 
-    // 只顯示遮蔽姓名 + 時間，不顯示內容
-    p.textContent = `${safeName} 於 ${timeText} 留下一則訊息。`;
-    commentsDiv.appendChild(p);
+      // 只顯示遮蔽姓名 + 時間，不顯示內容
+      p.textContent = `${safeName} 於 ${timeText} 留下一則訊息。`;
+      commentsDiv.appendChild(p);
+    });
   });
-});
 
 
 </script>
