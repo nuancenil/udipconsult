@@ -6,15 +6,14 @@ zh_url: /contact/
 permalink: /en/contact/
 ---
 
+For urgent matters, please contact us directly by email
+genius@eudaimonia-ip.com
+, and we will prioritize your request.
+Messages submitted through this form are reviewed within 1 business day.
+
 If you would like to discuss a project or potential collaboration, feel free to contact us:
 
-- Email: [genius@eudaimonia-ip.com](mailto:genius@eudaimonia-ip.com)
-
-You can also leave a short description (target market, technology area, timeline and budget).
-We will get back to you within 2 business days.
-
 ## Leave us a message
-
 
 <form id="comment-form">
   <p>
@@ -55,7 +54,8 @@ We will get back to you within 2 business days.
         name="message"
         required
         maxlength="500"
-        rows="6"></textarea>
+        rows="6"
+        style="height: 240px;"></textarea>
     </label>
   </p>
   <p>

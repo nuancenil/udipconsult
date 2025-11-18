@@ -9,6 +9,9 @@ permalink: /contact/
 如果你想與我們討論項目或合作，歡迎來信：
 - Email：[genius@eudaimonia-ip.com](mailto:genius@eudaimonia-ip.com)
 
+若您的案件較急，建議直接來信，我們會優先處理。
+留言表單的訊息我們會在 1 個工作天內查看與回覆。
+
 你也可以留下需求重點（目標市場、技術領域、時程與預算），我們會在 2 個工作日內回覆。
 
 ## 留言給我們
@@ -44,7 +47,7 @@ permalink: /contact/
         required
         maxlength="500"
         rows="6"
-        style="height: 180px;"></textarea>
+        style="height: 240px;"></textarea>
     </label>
     </p>
     <p style="display:none;">
