@@ -13,8 +13,6 @@ permalink: /contact/
 
 ## 留言給我們
 
-<div id="comments"></div>
-
 <form id="comment-form">
   <p>
     <label>您的稱呼：<br>
@@ -46,14 +44,23 @@ permalink: /contact/
         required
         maxlength="500"></textarea>
     </label>
-  </p>
-  <p>
-    <button type="submit">送出留言</button>
-  </p>
+    </p>
+    <p style="display:none;">
+    <label>請留空：<br>
+    <input type="text" id="honeypot" name="honeypot">
+    </label>
+    </p>
+    <p>
+        <button type="submit">送出留言</button>
+    </p>
 </form>
+
+
+<div id="comments"></div>
 
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+
   import { 
     getFirestore, collection, addDoc, onSnapshot,
     query, orderBy, serverTimestamp
@@ -99,8 +106,12 @@ permalink: /contact/
     return `${yyyy}-${mm}-${dd} ${hh}:${mi}`;
   }
 
+    const button = form.querySelector("button[type=submit]");
+
     form.addEventListener("submit", async (e) => {
     e.preventDefault();
+    if (button.disabled) return; // 再按也沒用
+
     const name  = nameInput.value.trim();
     const email = emailInput.value.trim();   // 👈 一定要有這行
     const msg   = msgInput.value.trim();
@@ -108,6 +119,8 @@ permalink: /contact/
     if (!name || !email || !msg) {
       return;
     }
+
+    button.disabled = true;
 
     await addDoc(commentsCol, {
       name,
@@ -119,11 +132,29 @@ permalink: /contact/
     nameInput.value = "";
     emailInput.value = "";
     msgInput.value = "";
-  });
 
+    // 30 秒後才能再送
+    setTimeout(() => {
+        button.disabled = false;
+    }, 30000);
 
-  const q = query(commentsCol, orderBy("createdAt", "desc"));
-  onSnapshot(q, (snapshot) => {
+    });
+
+    const honeypotInput = document.getElementById("honeypot");
+
+    // submit 裡
+    const trap = honeypotInput.value.trim();
+    if (trap) {
+    // 有填表示很可疑，直接丟掉不要寫進 Firestore
+    return;
+    }
+
+    const q = query(
+    commentsCol, 
+    orderBy("createdAt", "desc"), 
+    limit(50)
+    );
+    onSnapshot(q, (snapshot) => {
     commentsDiv.innerHTML = "";
     snapshot.forEach((doc) => {
       const data = doc.data();
