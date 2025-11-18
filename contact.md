@@ -98,10 +98,10 @@ permalink: /contact/
     return `${yyyy}-${mm}-${dd} ${hh}:${mi}`;
   }
 
-  form.addEventListener("submit", async (e) => {
+    form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const name  = nameInput.value.trim();
-    const email = emailInput.value.trim();
+    const email = emailInput.value.trim();   // 👈 一定要有這行
     const msg   = msgInput.value.trim();
 
     if (!name || !email || !msg) {
@@ -119,6 +119,7 @@ permalink: /contact/
     emailInput.value = "";
     msgInput.value = "";
   });
+
 
   const q = query(commentsCol, orderBy("createdAt", "desc"));
   onSnapshot(q, (snapshot) => {
