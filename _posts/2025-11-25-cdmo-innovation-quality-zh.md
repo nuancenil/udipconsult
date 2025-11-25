@@ -7,9 +7,9 @@ permalink: /2025/11/25/cdmo-innovation-quality-zh/
 en_url: /2025/11/25/cdmo-innovation-quality-en/
 ---
 
-<div style="display:flex; gap:2rem; align-items:flex-start; flex-wrap:wrap;">
+<div style="display:flex; gap:2rem; align-items:flex-start; flex-wrap:wrap;" markdown="1">
 
-<div style="flex:1 1 300px; min-width:0;">
+<div style="flex:1 1 300px; min-width:0;" markdown="1">
 
 # 從代工到共創：CDMO / OEM / CRO 如何在品質不失控的前提下，長出自己的創新與 IP？
 
@@ -68,7 +68,7 @@ en_url: /2025/11/25/cdmo-innovation-quality-en/
 
 </div>
 
-<div style="flex:1 1 300px; min-width:0;">
+<div style="flex:1 1 300px; min-width:0;" markdown="1">
 
 # From Outsourcing to Co-Creation:  
 How CDMOs / OEMs / CROs Can Grow Their Own Innovation & IP Without Losing Control of Quality
