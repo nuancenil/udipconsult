@@ -6,6 +6,11 @@ description: 針對 CDMO、OEM 與 CRO，拆解創新管理與品質管理之間
 permalink: /2025/11/25/cdmo-innovation-quality-zh/
 en_url: /2025/11/25/cdmo-innovation-quality-en/
 ---
+
+<div style="display:flex; gap:2rem; align-items:flex-start; flex-wrap:wrap;">
+
+<div style="flex:1 1 300px; min-width:0;">
+
 # 從代工到共創：CDMO / OEM / CRO 如何在品質不失控的前提下，長出自己的創新與 IP？
 
 多數 CDMO、OEM、CRO 都卡在同一個悖論裡：
@@ -61,17 +66,85 @@ en_url: /2025/11/25/cdmo-innovation-quality-en/
 這份簡報會給你一個共同的「對話框架」，  
 讓你在跟老闆、品質、客戶討論時，不再只是靠感覺與火力，而是靠結構。
 
+</div>
+
+<div style="flex:1 1 300px; min-width:0;">
+
+# From Outsourcing to Co-Creation:  
+How CDMOs / OEMs / CROs Can Grow Their Own Innovation & IP Without Losing Control of Quality
+
+Most CDMOs, OEMs, and CROs are trapped in the same paradox:
+
+- Clients demand speed and flexibility  
+- Regulations and audits demand zero mistakes  
+- The quality system keeps saying: “Follow the procedure. Do not change anything.”
+
+The result is usually:
+
+- More and more projects, but revenue stays at **hourly fees / project fees**  
+- You help clients build their innovation and IP, while your own company is left with SOPs and checklists  
+- Any innovation idea is pushed to after hours, or blocked by the quality system at the door  
+
+If you also keep asking yourself:
+
+> “Can we build our own **platform capabilities, methods, and defensible IP**  
+>  without compromising quality and compliance?”
+
+This slide deck was designed exactly for that question.
+
 ---
 
-填寫表單可以幫助我們後續在更新簡報或寫後續內容時，  
-優先針對像你這樣的團隊，提供更具體的案例與工具。
+## What will this slide deck help you do?
+
+Inside the deck, you will gradually unpack and reframe these tensions:
+
+- **See the real structure behind “Innovation vs Quality vs Client demands”**  
+  It’s not about someone being “too emotional” or “too conservative”.  
+  The system is set up to only **deliver**, not to **evolve**.
+
+- **Separate the logic behind the “quality hat” and the “innovation hat”**  
+  When to speak in risk / audit language, and when to speak in terms of  
+  platforms, data, and reusable capabilities, so your meetings stop being a shouting match.
+
+- **Turn QMS / GxP from a “firewall” into a “filter for good innovations”**  
+  Not “everything is forbidden”, but: which changes go to a sandbox,  
+  which ones deserve an experiment, and which should be promoted into formal process & documentation.
+
+- **Extract your own assets from every project, not just deliverables**  
+  Including: platformized workflows, reusable templates across projects,  
+  measurement and data structures, and know-how that can be built into contracts and IP structures.
 
 ---
 
-## 線上表單：填寫後即可在畫面上取得下載連結
+## Who is this deck for?
+
+If you are:
+
+- An **operations / project lead** in biotech, pharma, CDMO, OEM, or CRO  
+- The person sitting between QA / QC / RA / IP answering “Can we change this?” every day  
+- A manager or founder who wants to move the organization from “contract execution”  
+  toward “co-creation platform”
+
+This deck gives you a shared **conversation framework** so that discussions with  
+your executives, quality team, and clients are based on structure, not just opinions and pressure.
+
+> Note: The slide deck itself is currently **English-only**,  
+> but all examples and structures are tailored for CDMO / OEM / CRO teams.
+
+</div>
+
+</div>
+
+---
+
+## 線上表單 / Online Form：填寫後即可在畫面上取得下載連結
 
 請花 2～3 分鐘，透過下方表單回答幾個關於你組織現況的問題。  
-送出後，畫面會直接顯示簡報下載連結。
+送出後，畫面會直接顯示**簡報下載連結（英文版 PDF）**。
+
+Please take 2–3 minutes to answer a few questions about your organization.  
+After you submit the form, the **download link to the slide deck (English PDF)**  
+will appear directly on the screen.
 
 _載入表單中… Loading…_
 
@@ -79,3 +152,5 @@ _載入表單中… Loading…_
         width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">
   載入表單中… Loading…
 </iframe>
+
+---
