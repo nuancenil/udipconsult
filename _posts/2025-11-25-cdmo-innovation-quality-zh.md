@@ -146,11 +146,12 @@ Please take 2–3 minutes to answer a few questions about your organization.
 After you submit the form, the **download link to the slide deck (English PDF)**  
 will appear directly on the screen.
 
-_載入表單中… Loading…_
+若下方沒有顯示表單，請改用這個連結開啟：  
+[開啟線上表單（新分頁）](https://docs.google.com/forms/d/e/1FAIpQLSenXfe2G9g7gJmbxmlumwWHq1sszq5FHGQbktgbXZv8HUoNRw/viewform)
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSenXfe2G9g7gJmbxmlumwWHq1sszq5FHGQbktgbXZv8HUoNRw/viewform?embedded=true"
         width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">
-  載入表單中… Loading…
+  若無法載入，請使用上方連結開啟表單。
 </iframe>
 
 ---
