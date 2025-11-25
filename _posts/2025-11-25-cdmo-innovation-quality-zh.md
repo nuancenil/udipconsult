@@ -43,29 +43,15 @@ this deck was created exactly for that question.
 
 - **看清三方拉扯的結構**  
   **See the structure behind the tension**  
-  拆解「創新 vs 品質 vs 客戶要求」三方拉扯的典型結構，讓衝突不再只是情緒，而是可以被設計與調整的系統。  
-  It breaks down the typical tension among Innovation, Quality, and Client demands, so conflict stops being “personal” and becomes something you can design and adjust.  
-
 - **戴上不同帽子，說對應的語言**  
   **Understand the “two hats” and their logic**  
-  當你戴上「品質帽」（Quality）與「創新帽」（Innovation）時，背後的決策邏輯、風險思維與 KPI 如何完全不同，以及如何在會議中替兩邊翻譯。  
-  You’ll see how the Quality hat and the Innovation hat come with completely different decision logic, risk appetite, and KPIs – and how to translate between them in real meetings.  
-
 - **讓品質系統變成「篩選好創新」的機制，而不是防火牆**  
   **Turn quality systems into filters for good innovation, not firewalls against change**  
-  避免把 QMS / GxP 無意間設計成「一律禁止變化」的防禦系統，而是能管理風險、保留有效變更的結構。  
-  It shows how to avoid designing QMS / GxP as an “absolutely no change” defense system, and instead make it a structure that manages risk while preserving valuable improvements.  
-
 - **讓 CDMO / OEM / CRO 不只剩下「代工」角色**  
   **Move beyond pure contract work and build your own IP base**  
-  從每一個專案交付中，抽離出「平台能力」「數據方法」「流程 know-how」，並思考如何在合約與 IP 結構上，讓這些成果成為你方真正可積累的資產。  
-  It helps you see how to extract platform capabilities, data methods, and process know-how from project work, and how contracts / IP structures can let those become your assets, not just the client’s.
-
-> 這個頁面只把「問題長什麼樣子」攤開給你看。  
-> This page only lays out what the problem actually looks like.  
+ 
 > 真正的解法與架構細節，被放在簡報裡等你拆解。  
 > The detailed solution patterns and structures are inside the deck for you to explore.
-
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSenXfe2G9g7gJmbxmlumwWHq1sszq5FHGQbktgbXZv8HUoNRw/viewform?embedded=true"
         width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">
