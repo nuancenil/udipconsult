@@ -6,52 +6,74 @@ description: 針對 CDMO、OEM 與 CRO，拆解創新管理與品質管理之間
 permalink: /2025/11/25/cdmo-innovation-quality-zh/
 en_url: /2025/11/25/cdmo-innovation-quality-en/
 ---
-# 從代工到共創：CDMO / OEM / CRO 如何在品質不失控的前提下，長出自己的創新與 IP？  
-**From Contractor to Co-Creator: How Can CDMOs / OEMs / CROs Grow Innovation & IP Without Losing Quality Control?**
+# 從代工到共創：CDMO / OEM / CRO 如何在品質不失控的前提下，長出自己的創新與 IP？
 
-在多數 CDMO、OEM 與 CRO 的日常裡，總是存在一種微妙又真實的拉扯：  
-In the day-to-day life of most CDMOs, OEMs, and CROs, there’s a constant and very real tension:
+多數 CDMO、OEM、CRO 都卡在同一個悖論裡：
 
-- 客戶要速度與彈性。  
-  Clients want speed and flexibility.  
-- 法規與稽核要求零風險。  
-  Regulators and auditors demand zero tolerance for risk.  
-- 品質系統強調一切「可控」「可追溯」。  
-  Quality systems insist that everything be “controlled” and “traceable.”  
+- 客戶要你又快又彈性  
+- 法規與稽核要求你零失誤  
+- 品質系統天天叫你「照程序，不要亂動」
 
-結果通常只有兩種：  
-The outcome is usually one of two extremes:
+結果往往變成：
 
-- 創新活動被擠回實驗室角落，「先顧交貨，之後再說」。  
-  Innovation gets pushed back into the lab corner: “Let’s ship first, fix later.”  
-- 幫客戶長出一堆創新與 IP，自家只拿專案費與工時費。  
-  The client walks away with the innovation and IP, while you get project fees and billable hours.
+- 越做越多專案，卻只賺到「時數費、專案費」  
+- 幫客戶長出創新與 IP，自家只留下 SOP 和檢查表  
+- 創新構想不是被擠到下班後，就是被品質系統擋在門外  
 
-如果你也在想：**「我們能不能既守得住品質，又為自己累積真正的創新與 IP？」**  
-If you’re wondering, **“Can we protect quality AND still build our own innovation and IP?”**  
-這份簡報就是為這個問題而寫。  
-this deck was created exactly for that question.
+如果你心裡也有一個問題：
 
+> 「我們能不能在不犧牲品質與合規的前提下，  
+>  真的為自己累積『平台能力』『方法論』『可主張的 IP』？」
+
+這份簡報就是為這個問題而設計。
 
 ---
 
-## 線上表單：填寫後取得簡報  
-## Online Form: Share Your Context, Then Download the Deck
+## 這份簡報要幫你解決什麼？
 
-## 你會在簡報得到的關鍵解答  
-## What This Deck Will Help You Clarify
+在簡報裡，你會一步步把這些問題看清楚、拆開來：
 
-- **看清三方拉扯的結構**  
-  **See the structure behind the tension**  
-- **戴上不同帽子，說對應的語言**  
-  **Understand the “two hats” and their logic**  
-- **讓品質系統變成「篩選好創新」的機制，而不是防火牆**  
-  **Turn quality systems into filters for good innovation, not firewalls against change**  
-- **讓 CDMO / OEM / CRO 不只剩下「代工」角色**  
-  **Move beyond pure contract work and build your own IP base**  
- 
-> 真正的解法與架構細節，被放在簡報裡等你拆解。  
-> The detailed solution patterns and structures are inside the deck for you to explore.
+- **看懂「創新 vs 品質 vs 客戶要求」的真實拉扯結構**  
+  不是誰情緒太多、誰太保守，而是整個系統被設計成只敢「交付」，不敢「演化」。
+
+- **區分「品質帽」與「創新帽」背後完全不同的邏輯**  
+  什麼時候要講風險、稽核語言；什麼時候要講平台、資料、可複用能力，  
+  才不會在同一場會議裡雞同鴨講。
+
+- **讓 QMS / GxP 從「防火牆」變成「篩選好創新的濾網」**  
+  不再是「一律禁止變更」，而是可以：哪些變更要先 sandbox、哪些要設計實驗、  
+  哪些可以沉澱成正式流程與文件。
+
+- **從每一個專案裡抽離出你自己的資產，而不只是交付物**  
+  包含：平台化的流程、跨專案可重用的模板、資料與指標設計、  
+  可以納入合約與 IP 結構的 know-how。
+
+---
+
+## 適合誰下載這份簡報？
+
+如果你是：
+
+- 生醫 / 製藥 / CDMO / OEM / CRO 的 **營運或專案負責人**  
+- 在 QA / QC / RA / IP 之間協調、每天處理「這個可以改嗎？」的人  
+- 想讓組織從「接案代工」慢慢走向「共創平台」的主管或創辦人  
+
+這份簡報會給你一個共同的「對話框架」，  
+讓你在跟老闆、品質、客戶討論時，不再只是靠感覺與火力，而是靠結構。
+
+---
+
+填寫表單可以幫助我們後續在更新簡報或寫後續內容時，  
+優先針對像你這樣的團隊，提供更具體的案例與工具。
+
+---
+
+## 線上表單：填寫後即可在畫面上取得下載連結
+
+請花 2～3 分鐘，透過下方表單回答幾個關於你組織現況的問題。  
+送出後，畫面會直接顯示簡報下載連結。
+
+_載入表單中… Loading…_
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSenXfe2G9g7gJmbxmlumwWHq1sszq5FHGQbktgbXZv8HUoNRw/viewform?embedded=true"
         width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">
