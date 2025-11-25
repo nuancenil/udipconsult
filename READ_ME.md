@@ -29,29 +29,12 @@ bundle exec jekyll serve
 - Add DNS: `www` → CNAME to `<your-account>.github.io` ; apex → A/ALIAS/ANAME to GitHub Pages IPs (see docs).
 
 
-#blog更新
-git add -A
-git commit -m "Update layout and blog page"
-git pull --rebase origin main
-git push origin main
+cd /Users/hazel/Documents/GitHub/udipconsult
 
-#index更新
-git add -A
-git commit -m "Style buttons; verify About/Contact links from index"
-git push
+# 確保在 main 分支
+git checkout main
 
-#一般部署
-
-
-
-🚀 想再簡化？可以設成 alias：
-
-在終端機打：
-
-git config --global alias.ap '!git add -A && git commit -m "update" && git push'
-
-以後你只要輸入：
-git ap
-
-就等於自動幫你完成「add + commit + push」✨
-（訊息是 "update"，你也可以改成自己的預設）
+# 把現在這個專案跟遠端 main 對齊（如果你已經是乾淨狀態，這行只會同步而已）
+git pull origin main
+# 設定 .gitignore，忽略 .DS_Store 跟 vendor/
+cat <<

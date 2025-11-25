@@ -6,6 +6,7 @@ description: For CDMOs, OEMs, and CROs, this note unpacks the structural tension
 permalink: /2025/11/25/cdmo-innovation-quality-en/
 zh_url: /2025/11/25/cdmo-innovation-quality-zh/
 ---
+
 **From Contractor to Co-Creator: How Can CDMOs / OEMs / CROs Grow Innovation & IP Without Losing Quality Control?**
 
 In the day-to-day life of most CDMOs, OEMs, and CROs, there’s a constant and very real tension:
