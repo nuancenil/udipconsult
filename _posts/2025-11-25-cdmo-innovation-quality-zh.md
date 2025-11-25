@@ -32,7 +32,11 @@ If you’re wondering, **“Can we protect quality AND still build our own innov
 這份簡報就是為這個問題而寫。  
 this deck was created exactly for that question.
 
+
 ---
+
+## 線上表單：填寫後取得簡報  
+## Online Form: Share Your Context, Then Download the Deck
 
 ## 你會在簡報得到的關鍵解答  
 ## What This Deck Will Help You Clarify
@@ -62,14 +66,6 @@ this deck was created exactly for that question.
 > 真正的解法與架構細節，被放在簡報裡等你拆解。  
 > The detailed solution patterns and structures are inside the deck for you to explore.
 
-
----
-
-## 線上表單：填寫後取得簡報  
-## Online Form: Share Your Context, Then Download the Deck
-
-請透過下列表單回答幾個關於你組織現況的問題，送出後畫面將顯示簡報下載連結。  
-Use the embedded form below to answer a few questions about your current situation. After you submit, a download link to the deck will appear on screen.
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSenXfe2G9g7gJmbxmlumwWHq1sszq5FHGQbktgbXZv8HUoNRw/viewform?embedded=true"
         width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">
