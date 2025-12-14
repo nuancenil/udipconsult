@@ -36,5 +36,56 @@ git checkout main
 
 # 把現在這個專案跟遠端 main 對齊（如果你已經是乾淨狀態，這行只會同步而已）
 git pull origin main
-# 設定 .gitignore，忽略 .DS_Store 跟 vendor/
-cat <<
+
+## 完整上傳 Commit 與推送到遠端（快速指南）
+在修改後，依序執行以下步驟來上傳變更到遠端：
+
+1. 檢查目前分支與工作區狀態：
+
+```bash
+git branch --show-current   # 或 git status -sb
+git status
+```
+
+2. 拉取遠端最新變更（保持分支同步）
+
+```bash
+git pull --rebase origin $(git branch --show-current)
+```
+
+3. 暫存你要提交的檔案：
+
+```bash
+git add -A        # 將所有已修改/新增/刪除的檔案暫存
+```
+
+4. 提交（寫清楚、簡短的 commit 訊息）：
+
+```bash
+git commit -m "簡潔描述：做了什麼/為何做"
+```
+
+5. 推送到遠端：
+
+- 若分支已經有對應的遠端 tracking：
+
+```bash
+git push
+```
+
+- 若是新分支或尚未設定 upstream，使用：
+
+```bash
+git push -u origin $(git branch --show-current)
+```
+
+6. 驗證遠端已收到變更：
+
+```bash
+git remote -v
+git log -n 1
+```
+
+提示：在多人協作時，建議先 `git pull --rebase` 再 `git push`，遇到衝突請以編輯衝突檔案後 `git add` 並繼續 `git rebase --continue`（或視情況使用 merge）。
+
+如果你想，我可以一併幫你把這個變更 commit 到本地（然後你決定是否要 `push`）。
