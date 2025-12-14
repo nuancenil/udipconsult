@@ -123,3 +123,58 @@ git remote -v
 ```
 
 提示：若發生衝突，解決衝突後執行 `git add <file>`，再使用 `git rebase --continue` 或完成合併流程。
+如果你想，我可以一併幫你把這個變更 commit 到本地（然後你決定是否要 `push`）。
+
+## GitHub Pages 與自訂網域疑難排解
+如果你已將變更推上 GitHub，但自訂網域（例如 `https://eudaimonia-ip.com/`）沒有即時更新，請依序檢查下列項目：
+
+1. 檢查 GitHub Pages 建置狀態
+
+- 打開你的 repository → Settings → Pages，查看『Build and deployment』是否顯示成功或失敗，以及最近的『Page build history』。
+- 若使用 Actions 部署，打開 Actions 頁面查看最近的 workflow 執行紀錄與錯誤訊息。
+
+2. 檢查是否有 `CNAME` 檔案
+
+```bash
+# 在專案目錄檢查是否有 CNAME 檔案（內容應為你的自訂網域）
+cd /Users/hazel/Documents/GitHub/udipconsult
+if [ -f CNAME ]; then cat CNAME; else echo "No CNAME file in repo"; fi
+```
+
+3. 檢查 DNS 記錄（使用 `dig`）
+
+```bash
+# 查 apex 與 www 的記錄
+dig +short A eudaimonia-ip.com
+dig +short CNAME www.eudaimonia-ip.com
+
+# 方便檢查完整記錄
+dig eudaimonia-ip.com any +noall +answer
+dig www.eudaimonia-ip.com any +noall +answer
+```
+
+4. 檢查網站回應（快速驗證 HTTPS／重定向）
+
+```bash
+curl -I https://eudaimonia-ip.com/ || curl -I http://eudaimonia-ip.com/
+```
+
+5. 重新觸發 Pages 重建（如果需要）
+
+- 建議用空 commit 觸發重建：
+
+```bash
+git commit --allow-empty -m "chore: trigger GitHub Pages rebuild"
+git push
+```
+
+6. 快取與 CDN
+
+- 若你使用 Cloudflare 或其他 CDN，可能需要在該服務清除快取（Purge Cache）。
+- 也可先在瀏覽器開啟無痕視窗或清快取後再試。
+
+補充說明：
+- DNS 變更通常有 TTL（生效延遲），完整生效可能需要數分鐘到 24 小時不等。\
+- 若 GitHub Pages 顯示 HTTPS 尚未啟用或憑證失敗，等待一段時間（Let's Encrypt 發放憑證）或檢查是否有其他服務綁定相同網域。
+
+需要我幫你執行 `dig` 查詢或在本地發起 `curl` 測試嗎？我可以把結果貼回來供你判斷。
