@@ -89,3 +89,37 @@ git log -n 1
 提示：在多人協作時，建議先 `git pull --rebase` 再 `git push`，遇到衝突請以編輯衝突檔案後 `git add` 並繼續 `git rebase --continue`（或視情況使用 merge）。
 
 如果你想，我可以一併幫你把這個變更 commit 到本地（然後你決定是否要 `push`）。
+
+## 可直接複製執行的乾淨指令
+以下指令可直接複製到終端（請在執行前把 `"YOUR COMMIT MESSAGE"` 或 `feature/your-branch-name` 換成你的內容）。
+
+情境 A — 更新現有分支（例如 `main`）：
+
+```bash
+cd /Users/hazel/Documents/GitHub/udipconsult
+git checkout main
+git pull --rebase origin main
+git add -A
+git commit -m "YOUR COMMIT MESSAGE"
+git push
+```
+
+情境 B — 新分支並推上遠端：
+
+```bash
+cd /Users/hazel/Documents/GitHub/udipconsult
+git checkout -b feature/your-branch-name
+git add -A
+git commit -m "YOUR COMMIT MESSAGE"
+git push -u origin feature/your-branch-name
+```
+
+快速驗證指令：
+
+```bash
+git status
+git log -n 1
+git remote -v
+```
+
+提示：若發生衝突，解決衝突後執行 `git add <file>`，再使用 `git rebase --continue` 或完成合併流程。
