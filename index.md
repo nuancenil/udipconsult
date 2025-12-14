@@ -34,6 +34,11 @@ hero_subtitle: 創新策略 × 智慧財產顧問
     <p>以資料為軸的創新方法論與工具集，結合流程與指標，讓研發輸出與 IP 價值對齊。</p>
     <p><a href="{{ '/pataxial/' | relative_url }}">探索 →</a></p>
   </div>
+    <div class="card">
+    <h3>IP Audit Platform <sup>™</sup></h3>
+    <p>智權評估，在不確定、跨領域、多因素的情境下，協助決策者用一致、可比較、可追溯的方式做判斷。</p>
+    <p><a href="https://ip-audit.eudaimonia-ip.com" target="_blank" rel="noopener">探索 →</a></p>
+  </div>
   <div class="card">
     <h3>洞見</h3>
     <p>研讀產業與技術脈動，分享策略觀點與案例分析，記錄我們的方法與學習。</p>
