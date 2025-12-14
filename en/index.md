@@ -37,6 +37,11 @@ Contact us today to learn how we can craft tailored IP strategies that strengthe
     <p><a href="{{ '/en/pataxial/' | relative_url }}">Explore →</a></p>
   </div>
   <div class="card">
+    <h3>IP Audit Platform <sup>™</sup></h3>
+    <p>IP assessment platform to support decision-making consistently, comparably, and traceably across uncertain, cross-disciplinary, and multi-factor situations.</p>
+    <p><a href="https://ip-audit.eudaimonia-ip.com" target="_blank" rel="noopener">Explore →</a></p>
+  </div>
+  <div class="card">
     <h3>Insights</h3>
     <p>Explore strategic perspectives, industry trends, and case analyses — documenting our approach and learnings.</p>
     <p><a href="{{ '/en/blog/' | relative_url }}">Visit Blog →</a></p>
