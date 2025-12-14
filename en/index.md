@@ -37,9 +37,9 @@ Contact us today to learn how we can craft tailored IP strategies that strengthe
     <p><a href="{{ '/en/pataxial/' | relative_url }}">Explore →</a></p>
   </div>
   <div class="card">
-    <h3>IP Audit Platform <sup>™</sup></h3>
-    <p>IP assessment platform to support decision-making consistently, comparably, and traceably across uncertain, cross-disciplinary, and multi-factor situations.</p>
-    <p><a href="https://ip-audit.eudaimonia-ip.com" target="_blank" rel="noopener">Explore →</a></p>
+    <h3>IP Decision Lab <sup>™</sup></h3>
+    <p>IP evaluation lab helping decision-makers assess intellectual property consistently, comparably, and traceably across uncertain, cross-disciplinary, and multi-factor situations.</p>
+    <p><a href="https://ipdecisionlab.eudaimonia-ip.com" target="_blank" rel="noopener">Explore →</a></p>
   </div>
   <div class="card">
     <h3>Insights</h3>
