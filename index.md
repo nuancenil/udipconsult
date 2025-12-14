@@ -37,7 +37,7 @@ hero_subtitle: 創新策略 × 智慧財產顧問
     <div class="card">
     <h3>IP Decision Lab <sup>™</sup></h3>
     <p>智權評估，在不確定、跨領域、多因素的情境下，協助決策者用一致、可比較、可追溯的方式做判斷。</p>
-    <p><a href="https://ip-audit.eudaimonia-ip.com" target="_blank" rel="noopener">探索 →</a></p>
+    <p><a href="https://ipdecisionlab.eudaimonia-ip.com" target="_blank" rel="noopener">探索 →</a></p>
   </div>
   <div class="card">
     <h3>洞見</h3>
